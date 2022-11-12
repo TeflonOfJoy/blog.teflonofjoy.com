@@ -28,4 +28,5 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 <h1>Building a HUGO website</h1>
-The idea to build a personal website has always been on my mind
+<p>The idea to build a personal website has always been on my mind</p>
+---
