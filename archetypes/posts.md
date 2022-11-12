@@ -1,6 +1,6 @@
 ---
 title: "My 1st post"
-date: 2020-09-15T11:30:03+00:00
+date: 2020-09-15
 # weight: 1
 # aliases: ["/first"]
 tags: ["first"]
@@ -12,7 +12,7 @@ draft: false
 hidemeta: false
 comments: false
 description: "Desc Text."
-canonicalURL: "https://canonical.url/to/page"
+canonicalURL: "https://teflonofjoy.com/posts/"
 disableHLJS: true # to disable highlightjs
 disableShare: false
 disableHLJS: false
@@ -31,7 +31,7 @@ cover:
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
 editPost:
-    URL: "https://github.com/TeflonOfJoy/teflonofjoy.com/content"
+    URL: "https://github.com/TeflonOfJoy/teflonofjoy.com/tree/main/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
