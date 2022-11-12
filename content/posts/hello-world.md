@@ -1,19 +1,17 @@
 ---
-title: "My 1st post"
+title: "Hello, World!"
 date: 2022-11-12
-# weight: 1
-# aliases: ["/first"]
-tags: ["first"]
+tags: ["hugo"]
+categories: ["web development"]
 author: "Emanuel Nibizi"
-# author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: false
 draft: false
 hidemeta: false
 comments: false
 description: "First testing post"
-canonicalURL: "https://teflonofjoy.com/posts/my-first-post"
-disableHLJS: true # to disable highlightjs
+canonicalURL: "https://teflonofjoy.com/posts/hello-world"
+disableHLJS: true
 disableShare: false
 disableHLJS: false
 hideSummary: false
@@ -24,15 +22,10 @@ ShowPostNavLinks: true
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
-cover:
-    image: "<image path/url>" # image path/url
-    alt: "<alt text>" # alt text
-    caption: "<text>" # display caption under cover
-    relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
 editPost:
     URL: "https://github.com/TeflonOfJoy/teflonofjoy.com/tree/main/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
-TEST TEST TEST
+<h1>Building a HUGO website</h1>
+The idea to build a personal website has always been on my mind
