@@ -62,12 +62,12 @@ params:
   # profile-mode
   profileMode:
     enabled: true # needs to be explicitly set
-    title: ExampleSite
-    subtitle: "This is subtitle"
-    imageUrl: /profile
+    title: TeflonOfJoy
+    subtitle: "Hi there \U0001F44B"
+    imageUrl: /profile.png
     imageWidth: 120
     imageHeight: 120
-    imageTitle: my image
+    imageTitle: Profile image
     buttons:
       - name: Posts
         url: posts
