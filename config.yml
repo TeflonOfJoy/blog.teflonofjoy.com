@@ -61,10 +61,10 @@ params:
 
   # profile-mode
   profileMode:
-    enabled: false # needs to be explicitly set
+    enabled: true # needs to be explicitly set
     title: ExampleSite
     subtitle: "This is subtitle"
-    imageUrl: "<img location>"
+    imageUrl: /profile
     imageWidth: 120
     imageHeight: 120
     imageTitle: my image
@@ -109,10 +109,14 @@ menu:
       name: archive
       url: /archives/
       weight: 10
-    - identifier: search
-      name: search
-      url: /search/
+    - identifier: categories
+      name: categories
+      url: /categories/
       weight: 20
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
