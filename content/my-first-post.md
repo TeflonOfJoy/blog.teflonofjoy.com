@@ -1,18 +1,18 @@
 ---
 title: "My 1st post"
-date: 2020-09-15T11:30:03+00:00
+date: 2022-11-12
 # weight: 1
 # aliases: ["/first"]
 tags: ["first"]
-author: "Me"
+author: "Emanuel Nibizi"
 # author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Desc Text."
-canonicalURL: "https://canonical.url/to/page"
+description: "First testing post"
+canonicalURL: "https://teflonofjoy.com/posts/my-first-post"
 disableHLJS: true # to disable highlightjs
 disableShare: false
 disableHLJS: false
