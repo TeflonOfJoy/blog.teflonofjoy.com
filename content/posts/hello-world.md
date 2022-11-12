@@ -35,4 +35,5 @@ editPost:
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
-<h1>Hello world</h1>
+# Hello world
+## Markdown test
