@@ -37,3 +37,4 @@ editPost:
 ---
 # Hello world
 ## Markdown test
+Simple text test
