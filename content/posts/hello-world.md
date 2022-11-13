@@ -1,20 +1,18 @@
 ---
 title: "Hello, world!"
-date: 2020-09-15
-# weight: 1
-# aliases: ["/first"]
-tags: ["hugo"]
+date: 2022-11-12
+tags: ["Web development"]
+categories: ["Projects"]
 author: "Emanuel Nibizi"
-# author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Desc Text."
+description: "Building a HUGO website"
 canonicalURL: "https://teflonofjoy.com/posts/hello-world"
 disableHLJS: true # to disable highlightjs
-disableShare: false
+disableShare: true
 disableHLJS: false
 hideSummary: false
 searchHidden: true
@@ -24,17 +22,10 @@ ShowPostNavLinks: true
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
-cover:
-    image: "<image path/url>" # image path/url
-    alt: "<alt text>" # alt text
-    caption: "<text>" # display caption under cover
-    relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
 editPost:
     URL: "https://github.com/TeflonOfJoy/teflonofjoy.com/tree/main/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
-# Hello world
-## Markdown test
-Simple text test
+### The idea
+The idea to have a personal website has always been on my mind, I've tried before.
