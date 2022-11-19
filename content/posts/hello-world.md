@@ -29,3 +29,4 @@ editPost:
 ---
 ### The idea
 The idea to have a personal website has always been on my mind, I've tried before.
+Holy cow.
