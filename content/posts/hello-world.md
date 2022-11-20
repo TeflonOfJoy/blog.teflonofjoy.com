@@ -2,7 +2,6 @@
 title: "Hello, world!"
 date: 2022-11-12
 tags: ["Web development"]
-categories: ["Projects"]
 author: "Emanuel Nibizi"
 showToc: true
 TocOpen: false
