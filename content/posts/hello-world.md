@@ -21,10 +21,6 @@ ShowPostNavLinks: true
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
-editPost:
-    URL: "https://github.com/TeflonOfJoy/teflonofjoy.com/tree/main/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
 ---
 ### The idea
 The idea to have a personal website has always been on my mind, I've tried before creating sites from the ground up, however I've recently decided to switch to a satic site generator for the simplicity and ease of use, which brings me to what this site is currently built with: Hugo.

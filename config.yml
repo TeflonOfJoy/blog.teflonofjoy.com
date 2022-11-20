@@ -1,5 +1,5 @@
 baseURL: "https://teflonofjoy.com/"
-title: TeflonOfJoy
+title: テフ
 paginate: 5
 theme: PaperMod
 
@@ -62,8 +62,8 @@ params:
   # profile-mode
   profileMode:
     enabled: true # needs to be explicitly set
-    title: TeflonOfJoy
-    subtitle: "Hi there \U0001F44B"
+    title: テフ
+    subtitle: "お早う \U0001F47A"
     imageUrl: /profile.png
     imageWidth: 120
     imageHeight: 120
