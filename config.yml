@@ -63,7 +63,7 @@ params:
   profileMode:
     enabled: true # needs to be explicitly set
     title: テフ
-    subtitle: "お早う \U0001F47A"
+    subtitle: "勉強中 \U0001F47A"
     imageUrl: /profile.png
     imageWidth: 120
     imageHeight: 120

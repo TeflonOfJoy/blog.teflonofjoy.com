@@ -1,8 +1,9 @@
 ---
 title: "Hello, world!"
 date: 2022-11-12
-tags: ["Web development"]
-author: "Emanuel Nibizi"
+tags: ["Hugo"]
+categories: ["Web development"]
+author: "Tef"
 showToc: true
 TocOpen: false
 draft: false
