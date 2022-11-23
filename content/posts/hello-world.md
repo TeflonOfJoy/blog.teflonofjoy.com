@@ -22,6 +22,13 @@ ShowPostNavLinks: true
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
+cover:
+  image: "https://d33wubrfki0l68.cloudfront.net/c38c7334cc3f23585738e40334284fddcaf03d5e/2e17c/images/hugo-logo-wide.svg"
+  # can also paste direct link from external site
+  # ex. https://i.ibb.co/K0HVPBd/paper-mod-profilemode.png
+  alt: "hugo-logo"
+  caption: "Hugo"
+  relative: false # To use relative path for cover image, used in hugo Page-bundles
 ---
 ### The idea
 The idea to have a personal website has always been on my mind, I've tried before creating sites from the ground up, however I've recently decided to switch to a satic site generator for the simplicity and ease of use, which brings me to what this site is currently built with: Hugo.
