@@ -1,15 +1,15 @@
 ---
-title: "Starting again"
-date: 2023-11-12
+title: "Starting..."
+date: 2023-11-11
 tags: ["Hugo"]
-categories: ["Web development"]
+categories: ["Site"]
 author: "Tef"
 showToc: true
 TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Building a Hugo website"
+description: "The site that I built"
 canonicalURL: "https://teflonofjoy.com/posts/hello-world"
 disableHLJS: true # to disable highlightjs
 disableShare: true
