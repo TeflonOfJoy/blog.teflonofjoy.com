@@ -2,7 +2,6 @@
 title: "Starting..."
 date: 2023-11-11
 tags: ["Hugo"]
-categories: ["Site"]
 author: "Tef"
 showToc: true
 TocOpen: false
