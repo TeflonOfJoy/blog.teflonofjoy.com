@@ -1,5 +1,5 @@
 baseURL: "https://teflonofjoy.com/"
-title: テフ
+title: テフのブログ
 paginate: 5
 theme: PaperMod
 
@@ -71,7 +71,7 @@ params:
   profileMode:
     enabled: true # needs to be explicitly set
     title: テフ
-    subtitle: "勉強中 \U0001F47A"
+    subtitle: "勉強中 \U0001F4D6"
     imageUrl: /profile.png
     imageWidth: 120
     imageHeight: 120
