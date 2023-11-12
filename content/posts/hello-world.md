@@ -1,6 +1,6 @@
 ---
-title: "Hello, world!"
-date: 2022-11-12
+title: "Goodbye, world!"
+date: 2023-11-12
 tags: ["Hugo"]
 categories: ["Web development"]
 author: "Tef"
