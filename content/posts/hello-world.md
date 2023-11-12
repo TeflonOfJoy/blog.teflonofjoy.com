@@ -1,5 +1,5 @@
 ---
-title: "Goodbye, world!"
+title: "Starting again"
 date: 2023-11-12
 tags: ["Hugo"]
 categories: ["Web development"]
