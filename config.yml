@@ -51,8 +51,8 @@ params:
         url: "https://github.com/TeflonOfJoy"
       - name: matrix
         url: "https://matrix.to/#/@teflonofjoy:matrix.org"
-      - name: Rss
-        url: "index.xml"
+      - name: email
+        url: "mailto:info@teflonofjoy.com"
 
   assets:
     # disableHLJS: true # to disable highlight.js
