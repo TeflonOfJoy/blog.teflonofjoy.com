@@ -8,7 +8,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Hello welcome, this is the site technical description"
+description: "Hello and welcome, this is the site technical description"
 canonicalURL: "https://teflonofjoy.com/posts/hello-world"
 disableHLJS: true # to disable highlightjs
 disableShare: true
