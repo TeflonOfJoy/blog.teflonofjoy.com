@@ -72,7 +72,7 @@ params:
     enabled: true # needs to be explicitly set
     title: テフ
     subtitle: "勉強中 \U0001F4D6"
-    imageUrl: "https://github-production-user-asset-6210df.s3.amazonaws.com/39195498/283066067-8a51c57c-aca4-41c8-ac58-52354bdbec00.png"
+    imageUrl: "/profile.png"
     imageWidth: 120
     imageHeight: 120
     imageTitle: Profile image
