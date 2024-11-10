@@ -67,14 +67,10 @@ languages:
         # imageHeight: 120
         imageTitle: Profile image
         buttons:
-          - name: Posts
+          - name: Post
             url: posts
-          - name: Tags
+          - name: Tag
             url: tags
-      label:
-        text: "Accueil"
-        icon: /apple-touch-icon.png
-        iconHeight: 35
   it:
     languageName: ":it:"
     weight: 3
@@ -107,9 +103,9 @@ languages:
         # imageHeight: 120
         imageTitle: Profile image
         buttons:
-          - name: Posts
+          - name: Post
             url: posts
-          - name: Tags
+          - name: Tag
             url: tags
   jp:
     languageName: ":jp:"
