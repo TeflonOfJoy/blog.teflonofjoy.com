@@ -164,19 +164,18 @@ params:
   ShowRssButtonInSectionTermList: true
   ShowAllPagesInArchive: true
   ShowPageNums: true
-  disableScrollToTop: false
   showToc: true
 
   homeInfoParams:
     Title: "My personal blog"
-    Content: >
-      👋 Welcome to demo page of Hugo's theme PaperMod!
+    Content:
+      👋 Welcome this is the personal blog of Emanuel Nibizi A.K.A TeflonOfJoy
 
-      - **PaperMod**  is designed to be clean and simple but fast and responsive theme with useful feature-set that enhances UX.
+      > - I deeply enjoy understanding a complex system, decomposing it, and finding where form does not meet intended function 🔍️
 
-      - Feel free to show your support by giving us a star 🌟 on GitHub and sharing with your friends and social media .
+      > - I enjoy reading about technology and imagining where it will take the world next.
 
-      - PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper/tree/4330c8b12aa48bfdecbcad6ad66145f679a430b3).
+      > - I enjoy learning new languages has evidenced by this blog 🤦️
 
   socialIcons:
       - name: github
