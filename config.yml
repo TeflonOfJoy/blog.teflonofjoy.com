@@ -51,7 +51,7 @@ languages:
         - name: Recherche
           url: /search/
           weight: 10
-        - name: Tags
+        - name: Tag
           url: /tags/
           weight: 10
 
@@ -74,7 +74,7 @@ languages:
   it:
     languageName: ":it:"
     weight: 3
-    title: Benvenuto sul mio blog!
+    title: Benvenuti sul mio blog!
     # taxonomies:
       # category: FRcategories
       # tag: FRtags
@@ -87,7 +87,7 @@ languages:
         - name: Cerca
           url: /search/
           weight: 10
-        - name: Tags
+        - name: Tag
           url: /tags/
           weight: 10
 
@@ -168,7 +168,7 @@ params:
 
   homeInfoParams:
     Title: "My personal blog"
-    Content:
+    Content: >
       👋 Welcome this is the personal blog of Emanuel Nibizi A.K.A TeflonOfJoy
 
       > - I deeply enjoy understanding a complex system, decomposing it, and finding where form does not meet intended function 🔍️
