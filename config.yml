@@ -1,7 +1,7 @@
 baseURL: "https://teflonofjoy.com/"
 title: テフのブログ
 paginate: 5
-theme: PaperMod
+theme: [hugo-PaperMod]
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -78,12 +78,10 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: TeflonOfJoy's Personal Blog
-  description: "An everything blog"
-  keywords: [Blog, Portfolio, PaperMod]
-  author: テフ
+  description: "Personal blog"
+  author: TeflonOfJoy
   # author: ["Me", "You"] # multiple authors
-  images: ["<link or path of image for opengraph, twitter-cards>"]
+  # images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
@@ -95,14 +93,10 @@ params:
   ShowCodeCopyButtons: false
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
-  UseHugoToc: true
   disableSpecial1stPost: false
   disableScrollToTop: false
-  comments: false
-  hidemeta: false
   hideSummary: false
-  showtoc: false
-  tocopen: false
+  ShowToc: true
 
   socialIcons:
       - name: github
