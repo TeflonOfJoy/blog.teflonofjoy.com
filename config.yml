@@ -176,7 +176,10 @@ params:
       > - I enjoy reading about technology and imagining where it will take the world next.
 
       > - I enjoy learning new languages has evidenced by this blog 🤦️
-      
+
+      > 
+      Song of the day! {{< spotify type="track" id="7AqeWMbBHytCqIiZDQISEb" >}}
+
   socialIcons:
       - name: github
         url: "https://github.com/TeflonOfJoy"
@@ -184,8 +187,6 @@ params:
         url: "https://matrix.to/#/@teflonofjoy:matrix.org"
       - name: email
         url: "mailto:info@teflonofjoy.com"
-      - name: spotify
-        url: "https://open.spotify.com/intl-it/track/5OYJXif1vzHZFvFORFBpvI?si=cbf8debb1e734b54"
 
   assets:
     disableHLJS: true # to disable highlight.js
