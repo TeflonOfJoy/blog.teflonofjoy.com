@@ -1,7 +1,7 @@
 ---
 title: "Mise à jour"
 date: 2024-11-10
-FRtags: ["Mise à jour du site"]
+tags: ["Mise à jour du site"]
 author: "Emanuel Nibizi"
 showToc: true
 TocOpen: false
