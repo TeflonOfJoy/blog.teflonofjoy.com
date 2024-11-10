@@ -12,6 +12,62 @@ minify:
   disableXML: true
   minifyOutput: true
 
+languages:
+  en:
+    languageName: ":en:"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: Archive
+          url: /archives/
+          weight: 5
+        - name: Search
+          url: /search/
+          weight: 10
+        - name: Tags
+          url: /tags/
+          weight: 10
+
+  fr:
+    languageName: ":fr:"
+    weight: 2
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: Archive
+          url: /archives/
+          weight: 5
+        - name: Search
+          url: /search/
+          weight: 10
+        - name: Tags
+          url: /tags/
+          weight: 10
+
+    # custom params for each language should be under [langcode].parms - hugo v0.120.0
+    params:
+      languageAltTitle: French
+    profileMode:
+      enabled: true # needs to be explicitly set
+      title: テフ
+      subtitle: "勉強中 \U0001F4D6"
+      imageUrl: "/profile.png"
+      imageWidth: 120
+      imageHeight: 120
+      imageTitle: Profile image
+      buttons:
+        - name: Posts
+          url: posts
+        - name: Tags
+          url: tags
+
 outputs:
   home:
     - HTML
@@ -92,20 +148,6 @@ params:
     threshold: 0.4
     minMatchCharLength: 0
     keys: ["title", "permalink", "summary", "content"]
-menu:
-  main:
-    - identifier: archive
-      name: archive
-      url: /archives/
-      weight: 10
-    - identifier: tags
-      name: tags
-      url: /tags/
-      weight: 20
-    - identifier: search
-      name: search
-      url: /search/
-      weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
