@@ -169,12 +169,12 @@ params:
 
   homeInfoParams:
     Title: "My personal blog"
-    Content: >
+    Content:
       👋 Welcome to my blog!
 
-      - Built with Hugo and deployed with netlify
-
-      - Feel free to check my github and social media
+      - Built with Hugo and deployed with netlify.
+      
+      - Feel free to check my github and social media.
 
       - For inquiries you can find my matrix and email here.
 
