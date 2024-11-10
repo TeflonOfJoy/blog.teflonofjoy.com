@@ -38,7 +38,7 @@ languages:
   fr:
     languageName: ":fr:"
     weight: 2
-    title: PaperModL2Bienvenue sur mon blog!
+    title: Bienvenue sur mon blog!
     taxonomies:
       category: FRcategories
       tag: FRtags
@@ -60,8 +60,8 @@ languages:
       languageAltTitle: French
     profileMode:
       enabled: true # needs to be explicitly set
-      title: Bonjur
-      subtitle: "勉強中 \U0001F4D6"
+      title: Bonjour
+      subtitle: "Vive les moules et les frites!"
       imageUrl: "/profile.png"
       # imageWidth: 120
       # imageHeight: 120
@@ -118,8 +118,8 @@ params:
   # profile-mode
   profileMode:
     enabled: true # needs to be explicitly set
-    title: テフ
-    subtitle: "勉強中 \U0001F4D6"
+    title: Hello!
+    subtitle: "Long live fish and chips!"
     imageUrl: "/profile.png"
     # imageWidth: 120
     # imageHeight: 120
