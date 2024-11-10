@@ -1,8 +1,8 @@
 ---
-title: "Recherche" # in any language you want
+title: "検索" # in any language you want
 layout: "search" # is necessary
 # url: "/archive"
 # description: "Description for Search"
-summary: "recherche"
-placeholder: "Rechercher"
+summary: "検索"
+placeholder: "検索"
 ---
