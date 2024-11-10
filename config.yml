@@ -177,10 +177,6 @@ params:
 
       > - I enjoy learning new languages has evidenced by this blog 🤦️
       
-      > Song of the day
-
-      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5OYJXif1vzHZFvFORFBpvI?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
   socialIcons:
       - name: github
         url: "https://github.com/TeflonOfJoy"
