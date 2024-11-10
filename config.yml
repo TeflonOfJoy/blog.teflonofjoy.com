@@ -1,7 +1,7 @@
 baseURL: "https://teflonofjoy.com/"
 title: テフのブログ
 paginate: 5
-theme: PaperMod
+theme: [hugo-PaperMod]
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -9,10 +9,11 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 enableEmoji: true
+pygmentsUseClasses: true
+mainsections: ["posts"]
 
 minify:
   disableXML: true
-  # minifyOutput: true
 
 languages:
   en:
@@ -53,22 +54,19 @@ languages:
           url: /tags/
           weight: 10
 
-    # custom params for each language should be under [langcode].parms - hugo v0.120.0
     params:
       languageAltTitle: French
-    profileMode:
-      enabled: true # needs to be explicitly set
-      title: テフ
-      subtitle: "勉強中 \U0001F4D6"
-      imageUrl: "/profile.png"
-      # imageWidth: 120
-      # imageHeight: 120
-      imageTitle: Profile image
-      buttons:
-        - name: Posts
-          url: posts
-        - name: Tags
-          url: tags
+      profileMode:
+        enabled: true
+        title: Bonjour
+        subtitle: "勉強中 \U0001F4D6"
+        imageUrl: "/profile.png"
+        imageTitle: Profile image
+        buttons:
+          - name: Posts
+            url: posts
+          - name: Tags
+            url: tags
 
 outputs:
   home:
@@ -77,32 +75,21 @@ outputs:
     - JSON # is necessary
 
 params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: TeflonOfJoy's Personal Blog
-  description: "An everything blog"
-  keywords: [Blog, Portfolio, PaperMod]
-  author: テフ
-  # author: ["Me", "You"] # multiple authors
-  images: ["<link or path of image for opengraph, twitter-cards>"]
-  DateFormat: "January 2, 2006"
-  defaultTheme: auto # dark, light
-  disableThemeToggle: false
+  env: production
+  description: "Personal blog"
+  author: TeflonOfJoy
 
-  ShowReadingTime: true
+  defaultTheme: auto
   ShowShareButtons: true
+  ShowReadingTime: true
+  displayFullLangName: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
-  ShowWordCount: true
+  ShowCodeCopyButtons: true
   ShowRssButtonInSectionTermList: true
-  UseHugoToc: true
-  disableSpecial1stPost: false
-  disableScrollToTop: false
-  comments: false
-  hidemeta: false
-  hideSummary: false
-  showtoc: false
-  tocopen: false
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowToc: true
 
   socialIcons:
       - name: github
@@ -113,8 +100,7 @@ params:
         url: "mailto:info@teflonofjoy.com"
 
   assets:
-    # disableHLJS: true # to disable highlight.js
-    # disableFingerprinting: true
+    disableHLJS: true
     favicon: /favicon.ico
     favicon16x16: /favicon-16x16.png
     favicon32x32: /favicon-32x32.png
@@ -125,32 +111,18 @@ params:
     icon: /apple-touch-icon.png
     iconHeight: 35
 
-  # profile-mode
   profileMode:
-    enabled: true # needs to be explicitly set
+    enabled: true
     title: テフ
     subtitle: "勉強中 \U0001F4D6"
     imageUrl: "/profile.png"
-    # imageWidth: 120
-    # imageHeight: 120
     imageTitle: Profile image
     buttons:
       - name: Posts
         url: posts
       - name: Tags
         url: tags
-        
-  # for search
-  # https://fusejs.io/api/options.html
-  # fuseOpts:
-    # isCaseSensitive: false
-    # shouldSort: true
-    # location: 0
-    # distance: 1000
-    # threshold: 0.4
-    # minMatchCharLength: 0
-    # keys: ["title", "permalink", "summary", "content"]
-# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+
 pygmentsUseClasses: true
 markup:
   goldmark:
@@ -158,8 +130,3 @@ markup:
       unsafe: true
   highlight:
     noClasses: false
-    # anchorLineNos: true
-    # codeFences: true
-    # guessSyntax: true
-    # lineNos: true
-    # style: monokai
