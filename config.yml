@@ -1,7 +1,7 @@
 baseURL: "https://teflonofjoy.com/"
 title: Welcome to my blog!
 paginate: 5
-theme: ["PaperMod"]
+theme: ["hugo-shortcode-roneo-collection","PaperMod"]
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
