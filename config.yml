@@ -1,7 +1,7 @@
 baseURL: "https://teflonofjoy.com/"
-title: テフのブログ
+title: Welcome to my blog!
 paginate: 5
-theme: PaperMod
+theme: ["PaperMod"]
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -9,6 +9,7 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 enableEmoji: true
+pygmentsUseClasses: true
 
 minify:
   disableXML: true
@@ -37,6 +38,7 @@ languages:
   fr:
     languageName: ":fr:"
     weight: 2
+    title: PaperModL2Bienvenue sur mon blog!
     taxonomies:
       category: FRcategories
       tag: FRtags
@@ -58,7 +60,7 @@ languages:
       languageAltTitle: French
     profileMode:
       enabled: true # needs to be explicitly set
-      title: テフ
+      title: Bonjur
       subtitle: "勉強中 \U0001F4D6"
       imageUrl: "/profile.png"
       # imageWidth: 120
@@ -78,31 +80,20 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: TeflonOfJoy's Personal Blog
-  description: "An everything blog"
-  keywords: [Blog, Portfolio, PaperMod]
-  author: テフ
-  # author: ["Me", "You"] # multiple authors
-  images: ["<link or path of image for opengraph, twitter-cards>"]
-  DateFormat: "January 2, 2006"
-  defaultTheme: auto # dark, light
-  disableThemeToggle: false
+  description: "Personal blog"
+  author: TeflonOfoy
 
+  defaultTheme: auto # dark, light
+  displayFullLangName: true
   ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
-  ShowWordCount: true
   ShowRssButtonInSectionTermList: true
-  UseHugoToc: true
-  disableSpecial1stPost: false
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
   disableScrollToTop: false
-  comments: false
-  hidemeta: false
-  hideSummary: false
-  showtoc: false
-  tocopen: false
+  showToc: true
 
   socialIcons:
       - name: github
@@ -113,8 +104,7 @@ params:
         url: "mailto:info@teflonofjoy.com"
 
   assets:
-    # disableHLJS: true # to disable highlight.js
-    # disableFingerprinting: true
+    disableHLJS: true # to disable highlight.js
     favicon: /favicon.ico
     favicon16x16: /favicon-16x16.png
     favicon32x32: /favicon-32x32.png
@@ -151,7 +141,6 @@ params:
     # minMatchCharLength: 0
     # keys: ["title", "permalink", "summary", "content"]
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
-pygmentsUseClasses: true
 markup:
   goldmark:
     renderer:
