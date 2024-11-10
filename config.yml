@@ -19,10 +19,10 @@ languages:
   en:
     languageName: ":gb:"
     weight: 1
-    taxonomies:
-      category: categories
-      tag: tags
-      series: series
+    # taxonomies:
+      # category: categories
+      # tag: tags
+      # series: series
     menu:
       main:
         - name: Archive
@@ -39,10 +39,10 @@ languages:
     languageName: ":fr:"
     weight: 2
     title: Bienvenue sur mon blog!
-    taxonomies:
-      category: FRcategories
-      tag: FRtags
-      series: FRseries
+    # taxonomies:
+      # category: FRcategories
+      # tag: FRtags
+      # series: FRseries
     menu:
       main:
         - name: Archives
@@ -58,19 +58,19 @@ languages:
     # custom params for each language should be under [langcode].parms - hugo v0.120.0
     params:
       languageAltTitle: French
-    profileMode:
-      enabled: true # needs to be explicitly set
-      title: Bonjour
-      subtitle: "Vive les moules et les frites!"
-      imageUrl: "/profile.png"
-      # imageWidth: 120
-      # imageHeight: 120
-      imageTitle: Profile image
-      buttons:
-        - name: Posts
-          url: posts
-        - name: Tags
-          url: tags
+      profileMode:
+        enabled: true # needs to be explicitly set
+        title: Bonjour
+        subtitle: "Vive les moules et les frites!"
+        imageUrl: "/profile.png"
+        # imageWidth: 120
+        # imageHeight: 120
+        imageTitle: Profile image
+        buttons:
+          - name: Posts
+            url: posts
+          - name: Tags
+            url: tags
 
 outputs:
   home:
