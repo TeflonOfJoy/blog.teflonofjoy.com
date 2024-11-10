@@ -1,7 +1,7 @@
 baseURL: "https://teflonofjoy.com/"
 title: テフのブログ
 paginate: 5
-theme: ["PaperMod"]
+theme: PaperMod
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
