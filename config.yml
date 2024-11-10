@@ -59,7 +59,7 @@ languages:
     params:
       languageAltTitle: French
       profileMode:
-        enabled: true # needs to be explicitly set
+        enabled: false # needs to be explicitly set
         title: Bonjour!
         subtitle: "Vive les moules et les frites!"
         imageUrl: "/profile.png"
@@ -95,7 +95,7 @@ languages:
     params:
       languageAltTitle: Italian
       profileMode:
-        enabled: true # needs to be explicitly set
+        enabled: false # needs to be explicitly set
         title: Ciao!
         subtitle: "Viva la pizza!"
         imageUrl: "/profile.png"
@@ -131,7 +131,7 @@ languages:
     params:
       languageAltTitle: Japanese
       profileMode:
-        enabled: true # needs to be explicitly set
+        enabled: false # needs to be explicitly set
         title: こんにちは！
         subtitle: "勉強中!"
         imageUrl: "/profile.png"
@@ -167,6 +167,17 @@ params:
   disableScrollToTop: false
   showToc: true
 
+  homeInfoParams:
+  Title: "My personal blog"
+  Content: >
+    👋 Welcome to my blog!
+
+    - Built with Hugo and deployed with netlify
+
+    - Feel free to check my github and social media
+
+    - For inquiries you can find my matrix and email here.
+
   socialIcons:
       - name: github
         url: "https://github.com/TeflonOfJoy"
@@ -189,7 +200,7 @@ params:
 
   # profile-mode
   profileMode:
-    enabled: true # needs to be explicitly set
+    enabled: false # needs to be explicitly set
     title: Hello!
     subtitle: "Long live fish and chips!"
     imageUrl: "/profile.png"
