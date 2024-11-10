@@ -168,15 +168,15 @@ params:
   showToc: true
 
   homeInfoParams:
-  Title: "My personal blog"
-  Content: >
-    👋 Welcome to my blog!
+    Title: "My personal blog"
+    Content: >
+      👋 Welcome to my blog!
 
-    - Built with Hugo and deployed with netlify
+      - Built with Hugo and deployed with netlify
 
-    - Feel free to check my github and social media
+      - Feel free to check my github and social media
 
-    - For inquiries you can find my matrix and email here.
+      - For inquiries you can find my matrix and email here.
 
   socialIcons:
       - name: github
