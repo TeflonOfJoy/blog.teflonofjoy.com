@@ -3,10 +3,12 @@ title: テフのブログ
 paginate: 5
 theme: PaperMod
 
+enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
+enableEmoji: true
 
 minify:
   disableXML: true
@@ -36,15 +38,15 @@ languages:
     languageName: ":fr:"
     weight: 2
     taxonomies:
-      category: categories
-      tag: tags
-      series: series
+      category: FRcategories
+      tag: FRtags
+      series: FRseries
     menu:
       main:
-        - name: Archive
+        - name: Archives
           url: /archives/
           weight: 5
-        - name: Search
+        - name: Recherche
           url: /search/
           weight: 10
         - name: Tags
