@@ -35,7 +35,7 @@ languages:
           weight: 10
 
   fr:
-    languageName: ":fr:"
+    languageName: "\U0001F1EB"
     weight: 2
     taxonomies:
       category: FRcategories
