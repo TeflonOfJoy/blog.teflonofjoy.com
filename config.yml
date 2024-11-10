@@ -175,7 +175,9 @@ params:
       > - I enjoy reading about technology and imagining where it will take the world next.
       > - I enjoy learning new languages has evidenced by this blog 🤦️
       
-      Song of the day! {{< spotify type="track" id="7AqeWMbBHytCqIiZDQISEb" width="100%" height="250" >}}
+      Song of the day 🎵
+      
+      > {{< spotify type="track" id="7AqeWMbBHytCqIiZDQISEb" width="100%" height="250" >}}
 
   socialIcons:
       - name: github
