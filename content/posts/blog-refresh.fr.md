@@ -4,7 +4,7 @@ date: 2024-11-10
 tags: ["Mise à jour du site"]
 author: "Emanuel Nibizi"
 showToc: true
-TocOpen: false
+TocOpen: true
 description: "Much needed site update"
 ---
 
