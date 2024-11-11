@@ -1,5 +1,5 @@
 baseURL: "https://teflonofjoy.com/"
-title: Welcome to my blog!
+title: TeflonOfJoy
 paginate: 5
 theme: ["hugo-shortcode-roneo-collection","PaperMod"]
 
@@ -38,7 +38,7 @@ languages:
   fr:
     languageName: ":fr:"
     weight: 2
-    title: Bienvenue sur mon blog!
+    # title: Bienvenue sur mon blog!
     # taxonomies:
       # category: FRcategories
       # tag: FRtags
@@ -74,7 +74,7 @@ languages:
   it:
     languageName: ":it:"
     weight: 3
-    title: Benvenuti sul mio blog!
+    # title: Benvenuti sul mio blog!
     # taxonomies:
       # category: FRcategories
       # tag: FRtags
@@ -110,7 +110,7 @@ languages:
   jp:
     languageName: ":jp:"
     weight: 4
-    title: 私のブログへようこそ！
+    # title: 私のブログへようこそ！
     # taxonomies:
       # category: FRcategories
       # tag: FRtags
@@ -152,10 +152,10 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  description: "Personal blog"
+  description: "Treasure trove of useless information"
   author: TeflonOfoy
 
-  defaultTheme: auto # dark, light
+  defaultTheme: dark # dark, light, auto
   displayFullLangName: true
   ShowReadingTime: true
   ShowShareButtons: true
@@ -167,9 +167,9 @@ params:
   showToc: true
 
   homeInfoParams:
-    Title: "My personal blog"
+    Title: "Welcome to my blog!"
     Content: |
-      👋 Welcome this is the personal blog of Emanuel Nibizi A.K.A TeflonOfJoy
+      👋 Hello this is the personal blog of TeflonOfJoy
 
       > - I deeply enjoy understanding a complex system, decomposing it, and finding where form does not meet intended function 🔍️
       > - I enjoy reading about technology and imagining where it will take the world next.
@@ -177,7 +177,7 @@ params:
       
       Song of the day 🎵
       
-      > {{< spotify type="track" id="7AqeWMbBHytCqIiZDQISEb" width="100%" height="250" >}}
+      > {{< spotify type="track" id="076rt3TGExWFNtw4Rt0h9l" width="100%" height="250" >}}
 
   socialIcons:
       - name: github

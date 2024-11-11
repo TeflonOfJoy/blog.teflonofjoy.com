@@ -2,6 +2,7 @@
 title: Privacy Policy
 url: "/privacy-policy/" 
 summary: Privacy Policy
+date: 2024-11-11
 ShowWordCount: false
 ShowReadingTime: false
 ShowToc: false
