@@ -152,7 +152,7 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  description: "Personal blog"
+  description: "Treasure trove of useless information"
   author: TeflonOfoy
 
   defaultTheme: dark # dark, light, auto
@@ -167,9 +167,9 @@ params:
   showToc: true
 
   homeInfoParams:
-    Title: "My personal blog"
+    Title: "Welcome to my blog!"
     Content: |
-      👋 Welcome this is the personal blog of Emanuel Nibizi A.K.A TeflonOfJoy
+      👋 Hello this is the personal blog of TeflonOfJoy
 
       > - I deeply enjoy understanding a complex system, decomposing it, and finding where form does not meet intended function 🔍️
       > - I enjoy reading about technology and imagining where it will take the world next.
