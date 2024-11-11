@@ -132,7 +132,8 @@ Playlist
 |   |   archive.md
 |   |   privacy policy.md
 |   |   search.md
-|
+|   \---posts
+| 
 +---layouts                                        # Overriding Theme Settings
 |   +---partials                          
 |   |       post_meta.html
