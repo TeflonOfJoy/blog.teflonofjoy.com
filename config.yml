@@ -155,7 +155,7 @@ params:
   description: "Personal blog"
   author: TeflonOfoy
 
-  defaultTheme: auto # dark, light
+  defaultTheme: dark # dark, light, auto
   displayFullLangName: true
   ShowReadingTime: true
   ShowShareButtons: true
