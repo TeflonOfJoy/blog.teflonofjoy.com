@@ -177,7 +177,7 @@ params:
       
       Song of the day 🎵
       
-      > {{< spotify type="track" id="7AqeWMbBHytCqIiZDQISEb" width="100%" height="250" >}}
+      > {{< spotify type="track" id="076rt3TGExWFNtw4Rt0h9l" width="100%" height="250" >}}
 
   socialIcons:
       - name: github
