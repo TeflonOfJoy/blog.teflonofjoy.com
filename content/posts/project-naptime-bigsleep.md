@@ -9,7 +9,7 @@ cover:
 description: "Comparing Strassen's method and naive approach for matrix multiplication, exploring time and memory complexities in Python."
 tags: ["ai", "cybersecurity"]
 showToc: true
-TocOpen: false
+TocOpen: true
 ---
 
 # Introduction
