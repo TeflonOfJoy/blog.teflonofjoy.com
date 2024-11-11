@@ -7,7 +7,7 @@ cover:
     alt: LLM(1800)_Krot_Studio_Alamy
     caption: "Source: krot studio via almy stock photo"
 description: "Comparing Strassen's method and naive approach for matrix multiplication, exploring time and memory complexities in Python."
-tags: ["AI", "LLM"]
+tags: ["ai", "cybersecurity"]
 showToc: true
 TocOpen: false
 ---
