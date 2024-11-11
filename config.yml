@@ -71,6 +71,18 @@ languages:
             url: posts
           - name: Tag
             url: tags
+      homeInfoParams:
+        Title: "Bienvenue sur mon blog !"
+        Content: |
+          👋 Bonjour, ceci est le blog personnel de TeflonOfJoy
+
+          > - J'aime profondément comprendre un système complexe, le décomposer et trouver où la forme ne répond pas à la fonction prévue 🔍️
+          > - J'aime lire sur la technologie et imaginer où elle mènera le monde à l'avenir.
+          > - J'aime apprendre de nouvelles langues, comme en témoigne ce blog 🤦️
+          
+          Morceau du jour 🎵
+          
+          > {{< spotify type="track" id="5OYJXif1vzHZFvFORFBpvI" width="100%" height="250" >}}
   it:
     languageName: ":it:"
     weight: 3
@@ -107,6 +119,18 @@ languages:
             url: posts
           - name: Tag
             url: tags
+      homeInfoParams:
+        Title: "Benvenuti sul mio blog !"
+        Content: |
+          👋 Ciao, questo è il blog personale di TeflonOfJoy.
+
+          > - Mi piace comprendere un sistema complesso, scomporlo e trovare dove la forma non soddisfa la funzione desiderata 🔍️
+          > - Mi piace leggere di tecnologia e immaginare dove porterà il mondo.
+          > - Mi piace imparare nuove lingue, come dimostra questo blog 🤦️
+          
+          La canzone del giorno 🎵
+          
+          > {{< spotify type="track" id="5OYJXif1vzHZFvFORFBpvI" width="100%" height="250" >}}
   jp:
     languageName: ":jp:"
     weight: 4
@@ -143,6 +167,18 @@ languages:
             url: posts
           - name: タグ
             url: tags
+      homeInfoParams:
+        Title: "ブログへようこそ !"
+        Content: |
+          👋 こんにちは、テフロン オブ ジョイの個人ブログです。
+
+          > - 複雑なシステムを理解すること、それを分解すること、そして形が意図した機能を満たしていないところを見つけることを深く楽しんでいます 🔍️
+          > - テクノロジーについて読み、それが次に世界をどこに連れて行くかを想像するのが好きです。
+          > - 新しい言語を学ぶのが好きなのは、このブログでも証明されている 🤦️
+          
+          今日の歌 🎵
+          
+          > {{< spotify type="track" id="5OYJXif1vzHZFvFORFBpvI" width="100%" height="250" >}}
 
 outputs:
   home:
@@ -167,7 +203,7 @@ params:
   showToc: true
 
   homeInfoParams:
-    Title: "Welcome to my blog!"
+    Title: "Welcome to my blog !"
     Content: |
       👋 Hello this is the personal blog of TeflonOfJoy
 
