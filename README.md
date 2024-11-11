@@ -126,22 +126,25 @@ Playlist
 +---archetypes
 |       default.md
 |       posts.md
+|
 +---content                                      # Site Content
 |   |   about.md
 |   |   archive.md
 |   |   privacy policy.md
 |   |   search.md
-|   |   
+|
 +---layouts                                        # Overriding Theme Settings
 |   +---partials                          
 |   |       post_meta.html
 |   |       footer.html
+|
 +---static                                          # Storing Favicons, Site Images and Blog Post Covers
 |   |   apple-touch-icon.png
 |   |   favicon-16x16.png
 |   |   favicon-32x32.png
 |   |   favicon.ico
 |   |   profile.png
+|
 \---themes                                          # Theme Folder (Not to be modified)
     \---PaperMod
     \---hugo-shortcode-roneo-collection
