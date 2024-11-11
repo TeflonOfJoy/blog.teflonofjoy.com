@@ -211,8 +211,6 @@ params:
       > - I enjoy reading about technology and imagining where it will take the world next.
       > - I enjoy learning new languages has evidenced by this blog 🤦️
       
-       {{< fancylink "Song of the day 🎵" >}}
-      
       > {{< spotify type="track" id="5OYJXif1vzHZFvFORFBpvI" width="100%" height="250" >}}
 
   socialIcons:
