@@ -2,8 +2,14 @@
 title: Privacy Policy
 url: "/privacy-policy/" 
 summary: Privacy Policy
+date: 2024-11-11
+ShowWordCount: false
+ShowReadingTime: false
 ShowToc: false
 ShowBreadCrumbs: false
+type : page
+comments: false
+draft: false
 ---
 
 The privacy of our visitors is of paramount importance. This Privacy Policy document details the types of personal information collected, recorded, and the methods of utilization by <https://teflonofjoy.com/>.
