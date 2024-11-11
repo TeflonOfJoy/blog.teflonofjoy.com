@@ -1,5 +1,5 @@
 baseURL: "https://teflonofjoy.com/"
-title: Welcome to my blog!
+title: TeflonOfJoy
 paginate: 5
 theme: ["hugo-shortcode-roneo-collection","PaperMod"]
 
@@ -38,7 +38,7 @@ languages:
   fr:
     languageName: ":fr:"
     weight: 2
-    title: Bienvenue sur mon blog!
+    # title: Bienvenue sur mon blog!
     # taxonomies:
       # category: FRcategories
       # tag: FRtags
@@ -74,7 +74,7 @@ languages:
   it:
     languageName: ":it:"
     weight: 3
-    title: Benvenuti sul mio blog!
+    # title: Benvenuti sul mio blog!
     # taxonomies:
       # category: FRcategories
       # tag: FRtags
@@ -110,7 +110,7 @@ languages:
   jp:
     languageName: ":jp:"
     weight: 4
-    title: 私のブログへようこそ！
+    # title: 私のブログへようこそ！
     # taxonomies:
       # category: FRcategories
       # tag: FRtags
