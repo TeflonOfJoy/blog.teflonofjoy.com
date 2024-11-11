@@ -1,7 +1,7 @@
 ---
 title: "Google: Big Sleep first real-world vulnerability discovered"
 date: 2024-11-11
-draft: false
+draft: true
 cover:
     image: posts/LLM(1800)_Krot_Studio_Alamy.webp
     alt: LLM(1800)_Krot_Studio_Alamy
