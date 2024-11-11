@@ -1,6 +1,6 @@
 ## Blog [![Netlify Status](https://api.netlify.com/api/v1/badges/c2cf16e7-350a-4d0a-9506-2c08979300e7/deploy-status)](https://app.netlify.com/sites/teflonofjoy/deploys)
 
-My very own personal blog where I ruminate about technology, programming, books, entertainment and all the fine things in life. Currently hosted on Netlify but I sure do want my own domain for it some day. Hoping it blows up.
+Welcome to my personal blog, where I share my musings on technology, programming, travel, entertainment, and all the joys life has to offer. Currently hosted on Netlify, and deployed through my own domain.
 
 ## Commands
 
