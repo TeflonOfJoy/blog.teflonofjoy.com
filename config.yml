@@ -206,9 +206,9 @@ params:
     Content: |
       I'm Emanuel, a full-time Software and Data Engineering student by day, and an avid gamer by night 👾
 
-      > - I enjoy problem solving, understanding a complex system and decomposing it 🔎
-      > - My favourite pastime is reading: fantasy, sci-fi, scientific papers, whatever picks my interest 📜
-      > - I love discovering new things about the world and myself, especially learning new languages and travelling to new places ✈
+      > - I appreciate problem solving, understanding complex systems, and dissecting them 🔎
+      > - My favorite pastime is reading: fantasy, science fiction, academic papers, whatever piques my interest 📜
+      > - I enjoy learning new things about the world and myself, particularly through language study and travel ✈
       > - Here's some music I like at the moment, enjoy your stay:
       
       > {{< spotify type="track" id="540k1IRl5UPMhVhpu1LRQ3" width="100%" height="250" >}}
