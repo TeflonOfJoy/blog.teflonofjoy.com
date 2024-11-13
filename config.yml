@@ -228,7 +228,7 @@ params:
     apple_touch_icon: /apple-touch-icon.png
 
   label:
-    text: "TOJ"
+    text: "Home"
     icon: /profile/header.webp
     iconHeight: 30
     iconWidth: 30
