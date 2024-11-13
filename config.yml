@@ -139,11 +139,11 @@ languages:
         - name: アーカイブ
           url: /archives/
           weight: 5
-        - name: 検索
-          url: /search/
-          weight: 10
         - name: タグ
           url: /tags/
+          weight: 10
+        - name: 検索
+          url: /search/
           weight: 10
 
     # custom params for each language should be under [langcode].parms - hugo v0.120.0
