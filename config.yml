@@ -81,7 +81,7 @@ languages:
           
           Morceau du jour 🎵
           
-          > {{< spotify type="track" id="0qGy0pxEhbiMsDQhwOKTAg" width="100%" height="250" >}}
+          > {{< spotify type="track" id="1clsf1YjKNHVUonDva4fnk" width="100%" height="250" >}}
   it:
     languageName: ":it:"
     weight: 3
@@ -129,7 +129,7 @@ languages:
           
           La canzone del giorno 🎵
           
-          > {{< spotify type="track" id="0qGy0pxEhbiMsDQhwOKTAg" width="100%" height="250" >}}
+          > {{< spotify type="track" id="1clsf1YjKNHVUonDva4fnk" width="100%" height="250" >}}
   jp:
     languageName: ":jp:"
     weight: 4
@@ -177,7 +177,7 @@ languages:
           
           今日の歌 🎵
           
-          > {{< spotify type="track" id="0qGy0pxEhbiMsDQhwOKTAg" width="100%" height="250" >}}
+          > {{< spotify type="track" id="1clsf1YjKNHVUonDva4fnk" width="100%" height="250" >}}
 
 outputs:
   home:
@@ -210,7 +210,7 @@ params:
       > - I enjoy reading about technology and imagining where it will take the world next.
       > - I enjoy learning new languages has evidenced by this blog 🤦️
       
-      > {{< spotify type="track" id="0qGy0pxEhbiMsDQhwOKTAg" width="100%" height="250" >}}
+      > {{< spotify type="track" id="1clsf1YjKNHVUonDva4fnk" width="100%" height="250" >}}
 
   socialIcons:
       - name: github
