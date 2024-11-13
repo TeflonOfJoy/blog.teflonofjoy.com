@@ -1,5 +1,5 @@
 baseURL: "https://teflonofjoy.com/"
-title: TeflonOfJoy
+title: Home | teflonofjoy.com
 paginate: 5
 theme: ["hugo-shortcode-roneo-collection","PaperMod"]
 
