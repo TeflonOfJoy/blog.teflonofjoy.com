@@ -204,10 +204,10 @@ params:
   homeInfoParams:
     Title: "Hi. 👋"
     Content: |
-      I'm Emanuel, a full-time Computer Science student by day, and avid gamer by night.
+      I'm Emanuel, a full-time *Computer Science* student by day, and avid gamer by night
 
-      > - I enjoy learning new things, particularly through language study and travel.
-      > - My favorite pastime is reading fantasy, science fiction, and manga in particular.
+      > - I enjoy learning new things, particularly through language study and travel
+      > - My favorite pastime is reading fantasy, science fiction, and manga in particular
       > - Here's some music I like at the moment, enjoy your stay:
       
       > {{< spotify type="track" id="540k1IRl5UPMhVhpu1LRQ3" width="100%" height="250" >}}
