@@ -121,31 +121,58 @@ Playlist
 
 ```shell
 |   .gitmodules
-|   .hugo_build.lock
 |   config.yml                                  # Site Settings and Customization. 
+|   README.md
 | 
 +---archetypes
-|       default.md
-|       posts.md
+|   |   default.md
+|
++---assets                                       # Adding Custom CSS
+|   \---css
+|       \---extended
+|               blank.css
+|               toc.css
 |
 +---content                                      # Site Content
-|   |   about.md
 |   |   archive.md
-|   |   privacy policy.md
+|   |   archive.fr.md
+|   |   archive.it.md
+|   |   archive.jp.md
 |   |   search.md
+|   |   search.fr.md
+|   |   search.it.md
+|   |   search.jp.md
+|   |
 |   \---posts
+|           post.md
 | 
 +---layouts                                        # Overriding Theme Settings
 |   +---partials                          
 |   |       post_meta.html
 |   |       footer.html
+|   |       header.html
+|   |       toc.html
+|   |
+|   \---shortcodes
+|           blockquote.html
+|           fancylink.html
+|           galleries.html
+|           highlight.html
+|           spotify.html
+|           video.html
 |
 +---static                                          # Storing Favicons, Site Images and Blog Post Covers
 |   |   apple-touch-icon.png
 |   |   favicon-16x16.png
 |   |   favicon-32x32.png
 |   |   favicon.ico
-|   |   profile.png
+|   |
+|   +---posts
+|   |       image.jpg
+|   |
+|   \---profile
+|           header.webp
+|           profile.png
 |
 \---themes                                          # Theme Folder (Not to be modified)
     \---PaperMod
