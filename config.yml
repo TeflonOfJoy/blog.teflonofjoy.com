@@ -79,7 +79,7 @@ languages:
           > - Mon passe-temps préféré est la lecture de fantasy, de science-fiction et de mangas en particulier
           > - Voici quelques musiques que j'aime en ce moment, amusez-vous bien:
           
-          > {{< spotify type="track" id="5HmxJhXgEq5CktS40EwGx4" width="100%" height="250" >}}
+          > {{< spotify type="track" id="1JvV2nnstVEGe8rZ85EM41" width="100%" height="250" >}}
   it:
     languageName: ":it:"
     weight: 3
@@ -125,7 +125,7 @@ languages:
           > - Il mio passatempo preferito è leggere fantasy, fantascienza e manga in particolare
           > - Ecco un po' di musica che mi piace al momento, divertiti:
           
-          > {{< spotify type="track" id="5HmxJhXgEq5CktS40EwGx4" width="100%" height="250" >}}
+          > {{< spotify type="track" id="1JvV2nnstVEGe8rZ85EM41" width="100%" height="250" >}}
   jp:
     languageName: ":jp:"
     weight: 4
@@ -171,7 +171,7 @@ languages:
           > - 特にファンタジーやSF、マンガを読むのが好きだ
           > - 今好きな音楽はこちら：
           
-          > {{< spotify type="track" id="5HmxJhXgEq5CktS40EwGx4" width="100%" height="250" >}}
+          > {{< spotify type="track" id="1JvV2nnstVEGe8rZ85EM41" width="100%" height="250" >}}
 
 outputs:
   home:
@@ -204,7 +204,7 @@ params:
       > - My favorite pastime is reading fantasy, science fiction, and manga in particular
       > - Here's some music I like at the moment, enjoy your stay:
       
-      > {{< spotify type="track" id="5HmxJhXgEq5CktS40EwGx4" width="100%" height="250" >}}
+      > {{< spotify type="track" id="1JvV2nnstVEGe8rZ85EM41" width="100%" height="250" >}}
 
   socialIcons:
       - name: github
