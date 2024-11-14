@@ -223,7 +223,7 @@ params:
 
   label:
     text: "Home"
-    icon: /profile/header.webp
+    icon: /profile/header-40x40.webp
     iconHeight: 30
     iconWidth: 30
 
