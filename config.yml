@@ -19,10 +19,6 @@ languages:
   en:
     languageName: ":gb:"
     weight: 1
-    # taxonomies:
-      # category: categories
-      # tag: tags
-      # series: series
     menu:
       main:
         - name: Archive
@@ -37,11 +33,6 @@ languages:
   fr:
     languageName: ":fr:"
     weight: 2
-    # title: Bienvenue sur mon blog!
-    # taxonomies:
-      # category: FRcategories
-      # tag: FRtags
-      # series: FRseries
     menu:
       main:
         - name: Archives
@@ -57,30 +48,12 @@ languages:
     # custom params for each language should be under [langcode].parms - hugo v0.120.0
     params:
       languageAltTitle: French
-      profileMode:
-        enabled: false # needs to be explicitly set
-        title: Bonjour!
-        subtitle: "Vive les moules et les frites!"
-        imageUrl: "/profile.png"
-        # imageWidth: 120
-        # imageHeight: 120
-        imageTitle: Profile image
-        buttons:
-          - name: Post
-            url: posts
-          - name: Tag
-            url: tags
       homeInfoParams:
         Title: "Salut. 👋"
         Content: Votre dose hebdomadaire de divagations vaguement scientifiques !
   it:
     languageName: ":it:"
     weight: 3
-    # title: Benvenuti sul mio blog!
-    # taxonomies:
-      # category: FRcategories
-      # tag: FRtags
-      # series: FRseries
     menu:
       main:
         - name: Archivio
@@ -96,30 +69,12 @@ languages:
     # custom params for each language should be under [langcode].parms - hugo v0.120.0
     params:
       languageAltTitle: Italian
-      profileMode:
-        enabled: false # needs to be explicitly set
-        title: Ciao!
-        subtitle: "Viva la pizza!"
-        imageUrl: "/profile.png"
-        # imageWidth: 120
-        # imageHeight: 120
-        imageTitle: Profile image
-        buttons:
-          - name: Post
-            url: posts
-          - name: Tag
-            url: tags
       homeInfoParams:
         Title: "Ciao. 👋"
         Content: La vostra dose settimanale di divagazioni vagamente scientifiche!
   jp:
     languageName: ":jp:"
     weight: 4
-    # title: 私のブログへようこそ！
-    # taxonomies:
-      # category: FRcategories
-      # tag: FRtags
-      # series: FRseries
     menu:
       main:
         - name: アーカイブ
@@ -135,19 +90,6 @@ languages:
     # custom params for each language should be under [langcode].parms - hugo v0.120.0
     params:
       languageAltTitle: Japanese
-      profileMode:
-        enabled: false # needs to be explicitly set
-        title: こんにちは！
-        subtitle: "勉強中!"
-        imageUrl: "/profile.png"
-        # imageWidth: 120
-        # imageHeight: 120
-        imageTitle: Profile image
-        buttons:
-          - name: 投稿
-            url: posts
-          - name: タグ
-            url: tags
       homeInfoParams:
         Title: "こんにちは。👋"
         Content: 漠然とした科学的戯言を毎週お届けする！
@@ -176,7 +118,7 @@ params:
 
   homeInfoParams:
     Title: "Hi. 👋"
-    Content: Your weekly dose of vaguely scientific rambling! {{< spotify type="track" id="2LwsunYgfRoqyIsNtgOCQx" width="100%" height="250" >}}
+    Content: Your weekly dose of vaguely scientific rambling!
 
   socialIcons:
       - name: github
@@ -184,7 +126,7 @@ params:
       - name: matrix
         url: "https://matrix.to/#/@teflonofjoy:matrix.org"
       - name: email
-        url: "mailto:info@teflonofjoy.com"
+        url: "mailto:emanuel.nibizi@teflonofjoy.com"
 
   assets:
     disableHLJS: true # to disable highlight.js
