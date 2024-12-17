@@ -120,14 +120,6 @@ params:
     Title: "Hi. 👋"
     Content: Your weekly dose of vaguely scientific rambling!
 
-  socialIcons:
-      - name: github
-        url: "https://github.com/TeflonOfJoy"
-      - name: matrix
-        url: "https://matrix.to/#/@teflonofjoy:matrix.org"
-      - name: email
-        url: "mailto:emanuel.nibizi@teflonofjoy.com"
-
   assets:
     disableHLJS: true # to disable highlight.js
     favicon: /favicon.ico
