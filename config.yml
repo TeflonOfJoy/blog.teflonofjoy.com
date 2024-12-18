@@ -112,7 +112,7 @@ params:
   description: "Treasure trove of useless information"
   author: TeflonOfoy
 
-  defaultTheme: auto # dark, light, auto
+  defaultTheme: dark # dark, light, auto
   displayFullLangName: true
   ShowReadingTime: true
   ShowShareButtons: true
