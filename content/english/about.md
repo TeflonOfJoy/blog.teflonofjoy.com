@@ -1,5 +1,6 @@
 --- 
 title: About
+url: "/about/"
 ShowWordCount: false
 ShowReadingTime: false
 ShowShareButtons: false

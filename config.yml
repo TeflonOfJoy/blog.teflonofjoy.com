@@ -17,6 +17,7 @@ minify:
 
 languages:
   en:
+    contentDir: content/english
     languageName: ":gb:"
     weight: 1
     menu:
@@ -34,6 +35,7 @@ languages:
           url: /tags/
           weight: 10
   fr:
+    contentDir: content/french
     languageName: ":fr:"
     weight: 2
     menu:
@@ -55,6 +57,7 @@ languages:
         Title: "Salut. 👋"
         Content: Votre dose hebdomadaire de divagations vaguement scientifiques !
   it:
+    contentDir: content/italian
     languageName: ":it:"
     weight: 3
     menu:
@@ -76,6 +79,7 @@ languages:
         Title: "Ciao. 👋"
         Content: La vostra dose settimanale di divagazioni vagamente scientifiche!
   jp:
+    contentDir: content/japanese
     languageName: ":jp:"
     weight: 4
     menu:
