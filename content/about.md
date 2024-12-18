@@ -1,10 +1,10 @@
 --- 
 title: About
 url: "/about/" 
-summary: Get to know me better
 type : page
 ShowWordCount: false
 ShowReadingTime: false
+ShowShareButtons: false
 ShowToc: false
 ShowBreadCrumbs: false
 comments: false
