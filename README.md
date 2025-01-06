@@ -1,6 +1,6 @@
 ## Blog [![Netlify Status](https://api.netlify.com/api/v1/badges/c2cf16e7-350a-4d0a-9506-2c08979300e7/deploy-status)](https://app.netlify.com/sites/teflonofjoy/deploys)
 
-Welcome to my personal blog, where I share my musings on technology, programming, travel, entertainment, and all the joys life has to offer. Currently hosted on Netlify, and deployed through my own domain.
+Welcome to my collaborative blog with my good friend [0universe0](https://github.com/0universe0), where we explore technology, programming, travel, entertainment, and the many joys of life. Proudly hosted on Netlify and seamlessly deployed through my custom domain.
 
 ## Commands
 
