@@ -139,21 +139,6 @@ params:
     icon: /profile/header-40x40.webp
     iconHeight: 30
     iconWidth: 30
-
-  # profile-mode
-  profileMode:
-    enabled: false # needs to be explicitly set
-    title: Hello!
-    subtitle: "Long live fish and chips!"
-    imageUrl: "/profile.png"
-    # imageWidth: 120
-    # imageHeight: 120
-    imageTitle: Profile image
-    buttons:
-      - name: Posts
-        url: posts
-      - name: Tags
-        url: tags
         
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 markup:
