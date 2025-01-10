@@ -1,5 +1,5 @@
 baseURL: "https://blog.teflonofjoy.com/"
-title: Life in the Loop | Two techies navigating life and code together
+title: Re:Furbed - Starting a Blog in Another World
 paginate: 5
 theme: ["hugo-shortcode-roneo-collection","PaperMod"]
 
@@ -124,8 +124,8 @@ params:
   showToc: true
 
   homeInfoParams:
-    Title: "Life in the Loop"
-    Content: Your weekly dose of scientific musings and delightfully extravagant reflections, exploring the endless loops of technology, travel, and life's quirks!
+    Title: "<span style='display: inline-flex; align-items: center;'><img src='/profile/title.png' alt='Title Image' style='height:60px; vertical-align:middle;'>Re:Furbed</span>"
+    Content: A weekly journey through scientific discoveries and insightful reflections, exploring the intricate connections between technology, travel, and the nuances of everyday life.
 
   assets:
     disableHLJS: true # to disable highlight.js
