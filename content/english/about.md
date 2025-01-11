@@ -17,6 +17,6 @@ Our core values are rooted in the freedom of science and life, advocating for op
 
 Each week, we bring you accessible posts on the latest advancements in technology, physics, AI, and other exciting innovations. Presented in a clear and easy-to-understand format. Whether you're a seasoned expert or a curious learner, we aim to inspire and inform through engaging content.
 
-# Contact Us
+## Contact Us
 
 - For inquiries, content requests, or sponsorship proposals, feel free to reach out to us at: <a href="mailto:indirizzo@email.com">refurbed@teflonofjoy.com</a>
