@@ -10,8 +10,7 @@ comments: false
 hidemeta: true
 ---
 
-# About Us
-![Cover](/static/profile/title.png)
+![Cover](/profile/title.png)
 **Re:Furbed** is a collaborative blog created by two friends with a shared passion for freely exchanging knowledge with each other and the world.
 
 Our core values are rooted in the freedom of science and life, advocating for open-source initiatives, nurturing curiosity, and fostering the open sharing of scientific insights.
