@@ -54,8 +54,8 @@ languages:
     params:
       languageAltTitle: French
       homeInfoParams:
-        Title: "Salut. 👋"
-        Content: Votre dose hebdomadaire de divagations vaguement scientifiques !
+        Title: "<span style='display: inline-flex; align-items: center;'><img src='/profile/title.png' alt='Title Image' style='height:60px; vertical-align:middle;'>Re:Furbed</span>"
+        Content: Un voyage hebdomadaire à travers des découvertes scientifiques et des réflexions profondes, explorant les connexions complexes entre la technologie, les voyages et les subtilités de la vie quotidienne.
   it:
     contentDir: content/italian
     languageName: ":it:"
@@ -76,8 +76,8 @@ languages:
     params:
       languageAltTitle: Italian
       homeInfoParams:
-        Title: "Ciao. 👋"
-        Content: La vostra dose settimanale di divagazioni vagamente scientifiche!
+        Title: "<span style='display: inline-flex; align-items: center;'><img src='/profile/title.png' alt='Title Image' style='height:60px; vertical-align:middle;'>Re:Furbed</span>"
+        Content: Un viaggio settimanale attraverso scoperte scientifiche e riflessioni profonde, esplorando le connessioni complesse tra tecnologia, viaggi e le sfumature della vita quotidiana.
   jp:
     contentDir: content/japanese
     languageName: ":jp:"
@@ -98,8 +98,8 @@ languages:
     params:
       languageAltTitle: Japanese
       homeInfoParams:
-        Title: "こんにちは。👋"
-        Content: 漠然とした科学的戯言を毎週お届けする！
+        Title: "<span style='display: inline-flex; align-items: center;'><img src='/profile/title.png' alt='Title Image' style='height:60px; vertical-align:middle;'>Re:Furbed</span>"
+        Content: 科学的発見と洞察に満ちた反省を通じた週刊の旅。テクノロジー、旅行、そして日常生活の微妙なつながりを探求します。
 
 outputs:
   home:
