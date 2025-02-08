@@ -1,0 +1,35 @@
+name: Auto Merge PRs and Delete Branch
+
+on:
+  schedule:
+    - cron: '0 12 * * 0'  # Runs every Sunday at 12:00 UTC
+
+  workflow_dispatch:  # Allows manual trigger
+
+jobs:
+  merge-prs:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      contents: write  # Required for merging PRs
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Automatically merge pull requests
+        uses: pascalgn/automerge-action@v0.15.6
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          args: --merge
+
+      - name: Delete merged branches
+        run: |
+          PRS=$(gh pr list --base main --state merged --json headRefName -q '.[].headRefName')
+          for branch in $PRS; do
+            echo "Deleting branch: $branch"
+            gh api -X DELETE repos/${{ github.repository }}/git/refs/heads/$branch
+          done
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
