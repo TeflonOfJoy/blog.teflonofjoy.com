@@ -1,4 +1,4 @@
-name: Auto Merge PRs and Delete Branches
+name: Auto Merge for PRs and Delete Branches
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:  # Allows manual trigger
 
 jobs:
-  enable-auto-merge:
+  auto-merge:
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
@@ -27,17 +27,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Sync Repository Before Deleting Branches
-        run: |
-          echo "Syncing repository to update branch info..."
-          gh repo sync ${{ github.repository }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Delete Merged Branches
         run: |
-          prs=$(gh pr list --base main --state merged --json headRefName -q '.[].headRefName')
+          # Fetch fresh PR data before deletion
+          sleep 10  # Short delay to allow GitHub to update its data
           
+          prs=$(gh pr list --base main --state merged --json headRefName -q '.[].headRefName')
+
           for branch in $prs; do
             if gh api repos/${{ github.repository }}/git/refs/heads/$branch >/dev/null 2>&1; then
               echo "Deleting branch: $branch"
