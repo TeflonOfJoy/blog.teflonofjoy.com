@@ -1,4 +1,4 @@
-name: Auto Merge for PRs and Delete Branches
+name: Auto Merge PRs and Delete Branches
 
 on:
   schedule:
