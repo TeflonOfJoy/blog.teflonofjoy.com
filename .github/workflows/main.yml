@@ -27,19 +27,24 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Delete Merged Branches
+      - name: Delete Merged Branches (Optimized)
         run: |
           # Fetch fresh PR data before deletion
           sleep 10  # Short delay to allow GitHub to update its data
-          
-          prs=$(gh pr list --base main --state merged --json headRefName -q '.[].headRefName')
 
-          for branch in $prs; do
-            if gh api repos/${{ github.repository }}/git/refs/heads/$branch >/dev/null 2>&1; then
+          # Get merged PR branches
+          merged_branches=$(gh pr list --base main --state merged --json headRefName -q '.[].headRefName')
+
+          # Get all existing branches in one API request
+          existing_branches=$(gh api repos/${{ github.repository }}/git/refs --jq '.[].ref' | sed 's|refs/heads/||')
+
+          # Loop through merged PR branches, delete only if still in existing branches
+          for branch in $merged_branches; do
+            if echo "$existing_branches" | grep -q "^$branch$"; then
               echo "Deleting branch: $branch"
               gh api -X DELETE repos/${{ github.repository }}/git/refs/heads/$branch
             else
-              echo "Branch $branch does not exist, skipping."
+              echo "Branch $branch already deleted, skipping."
             fi
           done
         env:
