@@ -6,7 +6,7 @@ on:
   workflow_dispatch:  # Allows manual trigger
 
 jobs:
-  merge-prs:
+  enable-auto-merge:
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
@@ -16,9 +16,10 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Enable auto-merge for PRs
+      - name: Enable Auto-Merge for All Open PRs
         run: |
           prs=$(gh pr list --state open --json number -q '.[].number')
+          
           for pr in $prs; do
             echo "Enabling auto-merge for PR #$pr"
             gh pr merge $pr --auto --merge
@@ -26,12 +27,24 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Delete merged branches
+      - name: Sync Repository Before Deleting Branches
+        run: |
+          echo "Syncing repository to update branch info..."
+          gh repo sync ${{ github.repository }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Delete Merged Branches
         run: |
           prs=$(gh pr list --base main --state merged --json headRefName -q '.[].headRefName')
+          
           for branch in $prs; do
-            echo "Deleting branch: $branch"
-            gh api -X DELETE repos/${{ github.repository }}/git/refs/heads/$branch
+            if gh api repos/${{ github.repository }}/git/refs/heads/$branch >/dev/null 2>&1; then
+              echo "Deleting branch: $branch"
+              gh api -X DELETE repos/${{ github.repository }}/git/refs/heads/$branch
+            else
+              echo "Branch $branch does not exist, skipping."
+            fi
           done
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
