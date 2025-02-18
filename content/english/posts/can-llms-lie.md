@@ -1,17 +1,15 @@
 ---
-title: "HAL 9000"
-date: 2025-01-06
-tags: ["science-fiction", "ai"]
+title: "Can LLMs Lie?"
+date: 2025-02-18
+tags: [, "ai"]
 author: "Emanuel Nibizi"
 showToc: true
 TocOpen: true
 draft: true
-description: "Are we getting closer and closer to our own HAL 9000?"
+description: ""
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 ---
-Testing PR auto merge
-Again
