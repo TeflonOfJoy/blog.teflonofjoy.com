@@ -3,8 +3,8 @@ title: "The Start"
 date: 2025-02-18
 # weight: 1
 # aliases: ["/first"]
-tags: ["first"]
-author: "0universe0, TeflonOfJoy"
+tags: ["physics", "philosophy"]
+author: ["0uiverse0"]
 # author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: true
@@ -12,7 +12,7 @@ draft: false
 hidemeta: false
 comments: false
 description: ""
-canonicalURL: "https://teflonofjoy.com/posts/"
+canonicalURL: "https://blog.teflonofjoy.com/posts/"
 disableHLJS: true # to disable highlightjs
 disableShare: false
 hideSummary: false
@@ -23,16 +23,6 @@ ShowPostNavLinks: true
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: false
-cover:
-    image: "<image path/url>" # image path/url
-    alt: "<alt text>" # alt text
-    caption: "<text>" # display caption under cover
-    relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
-editPost:
-    URL: "https://github.com/TeflonOfJoy/teflonofjoy.com/tree/main/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
 ---
 # The Start
 
