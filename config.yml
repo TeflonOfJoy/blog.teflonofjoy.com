@@ -144,21 +144,21 @@ params:
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 markup:
   goldmark:
+    # Add math compatibility
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+          - - \[
+            - \]
+          - - $$
+            - $$
+          inline:
+          - - \(
+            - \)
+        enable: true
     renderer:
       unsafe: true
-      # Add math compatibility
-      extensions:
-        passthrough:
-          delimiters:
-            block:
-            - - \[
-              - \]
-            - - $$
-              - $$
-            inline:
-            - - \(
-              - \)
-          enable: true
   highlight:
     noClasses: false
     # anchorLineNos: true
