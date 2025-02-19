@@ -1,27 +1,17 @@
 ---
 title: "The Start"
 date: 2025-02-18
-# weight: 1
-# aliases: ["/first"]
 tags: ["physics", "philosophy"]
 author: ["0uiverse0"]
-# author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: true
 draft: false
-hidemeta: false
-comments: false
 description: ""
-disableHLJS: true # to disable highlightjs
-disableShare: false
-hideSummary: false
-searchHidden: false
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true
-UseHugoToc: false
 ---
 # The Start
 
