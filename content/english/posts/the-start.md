@@ -12,6 +12,8 @@ ShowBreadCrumbs: true
 ShowPostNavLinks: true
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true
+params:
+  math: true
 ---
 # The Start
 
