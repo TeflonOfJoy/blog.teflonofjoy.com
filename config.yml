@@ -118,10 +118,12 @@ params:
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
+  ShowWordCount: true
   ShowRssButtonInSectionTermList: true
   ShowAllPagesInArchive: true
   ShowPageNums: true
   showToc: true
+  TocOpen: true
   math: true
 
   homeInfoParams:
@@ -144,19 +146,6 @@ params:
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 markup:
   goldmark:
-    # Add math compatibility
-    extensions:
-      passthrough:
-        delimiters:
-          block:
-          - - \[
-            - \]
-          - - $$
-            - $$
-          inline:
-          - - \(
-            - \)
-        enable: true
     renderer:
       unsafe: true
   highlight:
