@@ -2,7 +2,7 @@
 title: "The Start"
 date: 2025-02-18
 tags: ["physics", "philosophy"]
-author: ["0uiverse0"]
+author: ["0universe0"]
 draft: false
 description: ""
 ---
