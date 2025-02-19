@@ -12,7 +12,6 @@ draft: false
 hidemeta: false
 comments: false
 description: ""
-canonicalURL: "https://blog.teflonofjoy.com/posts/"
 disableHLJS: true # to disable highlightjs
 disableShare: false
 hideSummary: false
