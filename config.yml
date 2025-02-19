@@ -109,7 +109,7 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  description: "Treasure trove of useless information"
+  description: "A weekly journey through scientific discoveries and insightful reflections, exploring the intricate connections between technology, travel, and the nuances of everyday life."
   author: TeflonOfoy
 
   defaultTheme: dark # dark, light, auto
@@ -146,6 +146,19 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+      # Add math compatibility
+      extensions:
+        passthrough:
+          delimiters:
+            block:
+            - - \[
+              - \]
+            - - $$
+              - $$
+            inline:
+            - - \(
+              - \)
+          enable: true
   highlight:
     noClasses: false
     # anchorLineNos: true
@@ -153,17 +166,3 @@ markup:
     # guessSyntax: true
     # lineNos: true
     # style: monokai
-
-  # Add math compatibility
-  extensions:
-    passthrough:
-      delimiters:
-        block:
-        - - \[
-          - \]
-        - - $$
-          - $$
-        inline:
-        - - \(
-          - \)
-      enable: true
