@@ -15,6 +15,21 @@
 </style>
 
 <span class="parent-post-meta">
+    {{- with .Params.authors }}
+    <span id="post_meta_style_5">
+        <span class="fa {{ if gt (len .) 1 }}fa-users{{ else }}fa-user{{ end }}"></span>
+        <span>
+            {{- range $index, $author := . }}
+                {{- if eq $index 0 }}
+                    <a href="{{ printf "/authors/%s/" $author | relURL }}" style="color: var(--secondary)!important;">{{ $author }}</a>
+                {{- else }}
+                    , <a href="{{ printf "/authors/%s/" $author | relURL }}" style="color: var(--secondary)!important;">{{ $author }}</a>
+                {{- end }}
+            {{- end }}
+            &nbsp;&nbsp;
+        </span>
+    </span>
+    {{- end }}
     <span id="post_meta_style_1">
         <span class="fa fa-calendar-check-o"></span>
         <span>
