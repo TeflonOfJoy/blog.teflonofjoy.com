@@ -1,0 +1,4 @@
+{{ $noop := .Content }}
+{{ if or (.HasShortcode "katex") (.Page.Store.Get "hasKatex") }}
+  {{ partial "katex.html" }}
+{{ end }}
