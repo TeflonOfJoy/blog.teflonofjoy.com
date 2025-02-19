@@ -109,7 +109,7 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  description: "Treasure trove of useless information"
+  description: "A weekly journey through scientific discoveries and insightful reflections, exploring the intricate connections between technology, travel, and the nuances of everyday life."
   author: TeflonOfoy
 
   defaultTheme: dark # dark, light, auto
@@ -118,10 +118,13 @@ params:
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
+  ShowWordCount: true
   ShowRssButtonInSectionTermList: true
   ShowAllPagesInArchive: true
   ShowPageNums: true
   showToc: true
+  TocOpen: true
+  math: true
 
   homeInfoParams:
     Title: "<span style='display: inline-flex; align-items: center;'><img src='/profile/title.png' alt='Title Image' style='height:60px; vertical-align:middle;'>Re:Furbed</span>"
@@ -143,6 +146,17 @@ params:
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 markup:
   goldmark:
+    # Add math compatibility
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+          - - $$
+            - $$
+          inline:
+          - - $
+            - $
+        enable: true
     renderer:
       unsafe: true
   highlight:

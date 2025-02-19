@@ -43,6 +43,21 @@
             &nbsp;&nbsp;
         </span>
     </span>
+    {{- if not .Params.hideAuthor }}
+    {{- with .Params.author }}
+    <span id="post_meta_style_5">
+        <span class="fa {{ if gt (len .) 1 }}fa-users{{ else }}fa-user{{ end }}"></span>
+        <span>
+            {{- if (eq (printf "%T" .) "[]string") }}
+                {{- delimit . ", " }}
+            {{- else }}
+                {{- . }}
+            {{- end }}
+            &nbsp;&nbsp;
+        </span>
+    </span>
+    {{- end }}
+    {{- end }}
     <span id="post_meta_style_6">
         <span class="fa fa-tags" style="opacity: 0.8"></span>
         <span>

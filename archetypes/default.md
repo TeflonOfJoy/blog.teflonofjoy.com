@@ -12,7 +12,7 @@ draft: false
 hidemeta: false
 comments: false
 description: "Desc Text."
-canonicalURL: "https://teflonofjoy.com/posts/"
+canonicalURL: "https://teflonofjoy.com/posts/default"
 disableHLJS: true # to disable highlightjs
 disableShare: false
 hideSummary: false
@@ -30,7 +30,7 @@ cover:
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
 editPost:
-    URL: "https://github.com/TeflonOfJoy/teflonofjoy.com/tree/main/content"
+    URL: "https://github.com/TeflonOfJoy/blog.teflonofjoy.com/tree/main/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
