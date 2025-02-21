@@ -114,6 +114,12 @@ Playlist
 {{< spotify type="playlist" id="37i9dQZF1DX6dvuioZhoLo" >}}
 
 
+### KaTex
+
+```md
+{< katex >} $F = G\frac{m_1 m_2}{r^2}$ {< /katex >}
+
+
 
 ```
 
