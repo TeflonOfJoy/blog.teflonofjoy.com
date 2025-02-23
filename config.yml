@@ -78,7 +78,7 @@ languages:
       homeInfoParams:
         Title: "<span style='display: inline-flex; align-items: center;'><img src='/profile/title.png' alt='Title Image' style='height:60px; vertical-align:middle;'>Re:Furbed</span>"
         Content: Un viaggio settimanale attraverso scoperte scientifiche e riflessioni profonde, esplorando le connessioni complesse tra tecnologia, viaggi e le sfumature della vita quotidiana.
-  jp:
+  ja:
     contentDir: content/japanese
     languageName: ":jp:"
     weight: 4
@@ -115,7 +115,7 @@ params:
   defaultTheme: dark # dark, light, auto
   displayFullLangName: true
   ShowReadingTime: true
-  ShowShareButtons: true
+  ShowShareButtons: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowWordCount: true
