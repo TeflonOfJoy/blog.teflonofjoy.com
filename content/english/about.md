@@ -5,6 +5,7 @@ ShowReadingTime: false
 ShowShareButtons: false
 ShowToc: false
 ShowBreadCrumbs: false
+searchHidden: true
 hideSummary: true
 comments: false
 hidemeta: true
