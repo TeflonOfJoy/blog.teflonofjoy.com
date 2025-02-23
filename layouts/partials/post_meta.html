@@ -18,7 +18,7 @@
     <span id="post_meta_style_1">
         <span class="fa fa-calendar-check-o"></span>
         <span>
-            {{- (.Date.Format (default "January 2, 2006" .Site.Params.DateFormat)) }}
+            {{- .Date | time.Format ":date_long" -}}
             &nbsp;&nbsp;
         </span>
     </span>
@@ -32,14 +32,14 @@
     <span id="post_meta_style_3">
         <span class="fa fa-file-word-o"></span>
         <span>
-            {{- .WordCount }} words
+            {{ T "words" (dict "Count" .WordCount) }}
             &nbsp;&nbsp;
         </span>
     </span>
     <span id="post_meta_style_4">
         <span class="fa fa-clock-o"></span>
         <span>
-            {{- .ReadingTime }} mins
+            {{ T "read_time" (dict "Count" .ReadingTime) }}
             &nbsp;&nbsp;
         </span>
     </span>
