@@ -9,7 +9,7 @@
   line-height: 0;
   position: relative;
   top: -0.4em;
-  font-family: "Georgia", serif;
+  font-family: "Georgia", "Times New Roman", Times, serif;
 
   a {
     text-decoration: none;
@@ -30,13 +30,13 @@ ol.hugo-simplecite-vancouver > li {
   
   &::marker {
     content: "[" counter(list) "]  ";
-    font-family: "Georgia", serif;
+    font-family: "Georgia", "Times New Roman", Times, serif;
   }
 }
 
 .hugo-simplecite-reference-list {
   @extend .hugo-simplecite-vancouver;
-  font-family: "Georgia", serif;
+  font-family: "Georgia", "Times New Roman", Times, serif;
   font-size: 0.9rem;
   line-height: 1.6;
   margin: 1.5rem 0;
@@ -94,7 +94,7 @@ ol.hugo-simplecite-vancouver > li {
   margin: 2rem 0;
 
   .references-title {
-    font-family: "Georgia", serif;
+    font-family: "Georgia", "Times New Roman", Times, serif;
     font-weight: 600;
     font-size: 1.2rem;
     border-bottom: 1px solid var(--border);

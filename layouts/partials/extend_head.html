@@ -1,2 +1,4 @@
-{{ $simpleciteStyle := resources.Get "scss/hugo-simplecite.scss" | css.Sass | resources.Minify | resources.Fingerprint }}
-<link rel="stylesheet" type="text/css" href="{{ $simpleciteStyle.Permalink }}">
+<!-- In layouts/partials/extend_head.html -->
+{{ $simpleciteStyle := resources.Get "scss/hugo-simplecite.scss" | toCSS | minify | fingerprint }}
+<link rel="preload" href="{{ $simpleciteStyle.RelPermalink }}" as="style">
+<link rel="stylesheet" href="{{ $simpleciteStyle.RelPermalink }}" media="print" onload="this.media='all'">
