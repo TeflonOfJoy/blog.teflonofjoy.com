@@ -3,18 +3,16 @@
     "DOI": "10.48550/arXiv.2412.14093",
     "author": [
       {
-    "family": "Greenblatt",
+    "family": "Greenblatt et al.",
     "given": "R."
       }
     ],
     "container-title": "arXiv",
-    "id": "Turing1950",
-    "issue": "2",
+    "id": "Greenblatt2024",
     "issued": {
       "date-parts": [
     [
-      2024,
-      12
+      2024
     ]
       ]
     },
