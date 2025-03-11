@@ -1,6 +1,4 @@
-{{- .Page.Store.Set "hasMermaid" true -}}
-<div class="mermaid-wrapper">
-  <pre class="mermaid" style="text-align: center">
-    {{- .Inner | safeHTML -}}
-  </pre>
-</div>
+<pre class="mermaid" style="text-align: center">
+  {{ .Inner | htmlEscape | safeHTML }}
+</pre>
+{{ .Page.Store.Set "hasMermaid" true }}
