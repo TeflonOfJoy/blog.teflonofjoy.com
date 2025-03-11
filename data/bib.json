@@ -1,0 +1,24 @@
+[
+  {
+    "DOI": "10.48550/arXiv.2412.14093",
+    "author": [
+      {
+    "family": "Greenblatt",
+    "given": "R."
+      }
+    ],
+    "container-title": "arXiv",
+    "id": "Turing1950",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+    [
+      2024,
+      12
+    ]
+      ]
+    },
+    "title": "Alignment faking in large language models",
+    "type": "article-journal"
+  }
+]
