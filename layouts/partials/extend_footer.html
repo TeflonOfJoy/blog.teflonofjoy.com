@@ -1,0 +1,15 @@
+<!-- Additional scripts that need to be loaded at the end of the body -->
+
+<!-- Backup Mermaid initialization for any missed diagrams -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    if (typeof mermaid !== 'undefined' && document.querySelectorAll('.mermaid').length > 0) {
+      console.log('Ensuring all mermaid diagrams are initialized');
+      try {
+        mermaid.init('.mermaid');
+      } catch (e) {
+        console.warn('Backup mermaid initialization failed:', e);
+      }
+    }
+  });
+</script>

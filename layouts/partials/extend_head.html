@@ -8,5 +8,17 @@
   {{ partial "katex.html" }}
 {{ end }}
 
-<!-- Mermaid with proper initialization -->
-{{- partial "mermaid.html" . -}}
+<!-- Mermaid detection and initialization -->
+{{- $hasMermaid := false -}}
+{{- if .Page.Store.Get "hasMermaid" -}}
+  {{- $hasMermaid = true -}}
+{{- else -}}
+  {{- if in .Content "```mermaid" -}}
+    {{- $hasMermaid = true -}}
+    {{- .Page.Store.Set "hasMermaid" true -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if $hasMermaid -}}
+  {{- partial "mermaid.html" . -}}
+{{- end -}}

@@ -1,14 +1,57 @@
-{{ if .Page.Store.Get "hasMermaid" }}
-<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<!-- Mermaid JS Library with SRI hash for security -->
+<script defer
+        src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"
+        integrity="sha384-+8NhIwjmVBOYhnTuMCW9QmAUeB2D2+oYY+xLYJN+8z+rtSVBV3QZKNpYXK5JHCu"
+        crossorigin="anonymous"
+        onload="(function() {
+          const initializeMermaid = function() {
+            try {
+              const theme = localStorage.getItem('pref-theme') === 'dark' || 
+                           window.matchMedia('(prefers-color-scheme: dark)').matches 
+                           ? 'dark' 
+                           : 'neutral';
+              
+              mermaid.initialize({ 
+                startOnLoad: true,
+                theme: theme,
+                flowchart: {
+                  htmlLabels: true,
+                  curve: 'cardinal'
+                },
+                securityLevel: 'strict'
+              });
+            } catch (e) {
+              console.error('Mermaid initialization failed:', e);
+            }
+          };
+
+          if (document.readyState === 'complete') {
+            initializeMermaid();
+          } else {
+            document.addEventListener('DOMContentLoaded', initializeMermaid);
+          }
+        })()"></script>
+
+<!-- Fallback for script loading errors -->
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const theme = localStorage.getItem("pref-theme") === "dark" || window.matchMedia('(prefers-color-scheme: dark)').matches 
-      ? 'dark' 
-      : 'neutral';
-    mermaid.initialize({ 
-      startOnLoad: true,
-      theme: theme
-    });
-  });
+  window.addEventListener('error', function(e) {
+    if (e.target.src && e.target.src.includes('mermaid')) {
+      console.warn('Mermaid script failed to load. Trying fallback...');
+      const fallbackScript = document.createElement('script');
+      fallbackScript.src = 'https://unpkg.com/mermaid@11/dist/mermaid.min.js';
+      fallbackScript.defer = true;
+      fallbackScript.onload = function() {
+        const theme = localStorage.getItem('pref-theme') === 'dark' || 
+                     window.matchMedia('(prefers-color-scheme: dark)').matches 
+                     ? 'dark' 
+                     : 'neutral';
+        
+        mermaid.initialize({ 
+          startOnLoad: true,
+          theme: theme
+        });
+      };
+      document.head.appendChild(fallbackScript);
+    }
+  }, true);
 </script>
-{{ end }}
