@@ -1,15 +1,37 @@
 <!-- Additional scripts that need to be loaded at the end of the body -->
 
-<!-- Backup Mermaid initialization for any missed diagrams -->
+<!-- Robust Mermaid initialization for both first load and page reloads -->
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
+  // Function to initialize mermaid diagrams
+  function initMermaidDiagrams() {
     if (typeof mermaid !== 'undefined' && document.querySelectorAll('.mermaid').length > 0) {
-      console.log('Ensuring all mermaid diagrams are initialized');
+      console.log('Initializing mermaid diagrams');
       try {
-        mermaid.init('.mermaid');
+        // For Mermaid v11+, use mermaid.run()
+        if (typeof mermaid.run === 'function') {
+          mermaid.run();
+        } 
+        // Fallback for older versions
+        else if (typeof mermaid.init === 'function') {
+          mermaid.init(undefined, document.querySelectorAll('.mermaid'));
+        }
       } catch (e) {
-        console.warn('Backup mermaid initialization failed:', e);
+        console.warn('Mermaid initialization failed:', e);
       }
     }
-  });
+  }
+
+  // Initialize on DOMContentLoaded (first page load)
+  document.addEventListener('DOMContentLoaded', initMermaidDiagrams);
+  
+  // Also initialize on window load (helps with reloads)
+  window.addEventListener('load', initMermaidDiagrams);
+  
+  // If page is already loaded (for SPA or cached pages)
+  if (document.readyState === 'complete') {
+    initMermaidDiagrams();
+  }
+  
+  // Re-run after a short delay to catch any late DOM updates
+  setTimeout(initMermaidDiagrams, 500);
 </script>

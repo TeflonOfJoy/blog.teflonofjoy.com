@@ -2,35 +2,77 @@
 <script defer
         src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"
         integrity="sha384-+8NhIwjmVBOYhnTuMCW9QmAUeB2D2+oYY+xLYJN+8z+rtSVBV3QZKNpYXK5JHCu"
-        crossorigin="anonymous"
-        onload="(function() {
-          const initializeMermaid = function() {
-            try {
-              const theme = localStorage.getItem('pref-theme') === 'dark' || 
-                           window.matchMedia('(prefers-color-scheme: dark)').matches 
-                           ? 'dark' 
-                           : 'neutral';
-              
-              mermaid.initialize({ 
-                startOnLoad: true,
-                theme: theme,
-                flowchart: {
-                  htmlLabels: true,
-                  curve: 'cardinal'
-                },
-                securityLevel: 'strict'
-              });
-            } catch (e) {
-              console.error('Mermaid initialization failed:', e);
-            }
-          };
+        crossorigin="anonymous"></script>
 
-          if (document.readyState === 'complete') {
-            initializeMermaid();
-          } else {
-            document.addEventListener('DOMContentLoaded', initializeMermaid);
+<!-- Mermaid configuration and initialization -->
+<script>
+  (function() {
+    // Configure mermaid when it's loaded
+    window.mermaidConfig = {
+      startOnLoad: true,
+      theme: 'neutral',
+      flowchart: {
+        htmlLabels: true,
+        curve: 'cardinal'
+      },
+      securityLevel: 'strict'
+    };
+
+    // Function to initialize mermaid with proper theme
+    function configureMermaid() {
+      if (typeof mermaid !== 'undefined') {
+        // Get theme preference
+        const isDark = localStorage.getItem('pref-theme') === 'dark' || 
+                      window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        // Set theme based on dark mode preference
+        window.mermaidConfig.theme = isDark ? 'dark' : 'neutral';
+        
+        // Initialize mermaid with config
+        try {
+          mermaid.initialize(window.mermaidConfig);
+        } catch (e) {
+          console.error('Mermaid initialization failed:', e);
+        }
+      }
+    }
+
+    // Set up configuration when mermaid is loaded
+    function onMermaidLoaded() {
+      configureMermaid();
+      
+      // Listen for theme changes
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', configureMermaid);
+      
+      // Check for localStorage theme changes
+      window.addEventListener('storage', function(e) {
+        if (e.key === 'pref-theme') {
+          configureMermaid();
+        }
+      });
+    }
+
+    // When DOMContentLoaded
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof mermaid !== 'undefined') {
+        onMermaidLoaded();
+      } else {
+        // If mermaid isn't loaded yet, check periodically
+        const checkInterval = setInterval(function() {
+          if (typeof mermaid !== 'undefined') {
+            onMermaidLoaded();
+            clearInterval(checkInterval);
           }
-        })()"></script>
+        }, 100);
+        
+        // Don't check forever
+        setTimeout(function() {
+          clearInterval(checkInterval);
+        }, 5000);
+      }
+    });
+  })();
+</script>
 
 <!-- Fallback for script loading errors -->
 <script>
@@ -41,15 +83,9 @@
       fallbackScript.src = 'https://unpkg.com/mermaid@11/dist/mermaid.min.js';
       fallbackScript.defer = true;
       fallbackScript.onload = function() {
-        const theme = localStorage.getItem('pref-theme') === 'dark' || 
-                     window.matchMedia('(prefers-color-scheme: dark)').matches 
-                     ? 'dark' 
-                     : 'neutral';
-        
-        mermaid.initialize({ 
-          startOnLoad: true,
-          theme: theme
-        });
+        if (window.mermaidConfig) {
+          mermaid.initialize(window.mermaidConfig);
+        }
       };
       document.head.appendChild(fallbackScript);
     }
