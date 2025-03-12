@@ -1,0 +1,22 @@
+[
+  {
+    "DOI": "10.48550/arXiv.2412.14093",
+    "author": [
+      {
+    "family": "Greenblatt et al.",
+    "given": "R."
+      }
+    ],
+    "container-title": "arXiv",
+    "id": "Greenblatt2024",
+    "issued": {
+      "date-parts": [
+    [
+      2024
+    ]
+      ]
+    },
+    "title": "Alignment faking in large language models",
+    "type": "article-journal"
+  }
+]

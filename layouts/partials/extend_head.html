@@ -1,0 +1,9 @@
+<!-- Load CSS first -->
+{{ $simpleciteStyle := resources.Get "scss/hugo-simplecite.scss" | toCSS | minify | fingerprint }}
+<link rel="preload" href="{{ $simpleciteStyle.RelPermalink }}" as="style">
+<link rel="stylesheet" href="{{ $simpleciteStyle.RelPermalink }}" media="print" onload="this.media='all'">
+
+<!-- Conditional KaTeX -->
+{{ if or (.HasShortcode "katex") (.Page.Store.Get "hasKatex") }}
+  {{ partial "katex.html" }}
+{{ end }}

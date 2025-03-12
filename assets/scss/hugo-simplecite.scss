@@ -1,0 +1,120 @@
+/* ======================= */
+/*  HUGO-SIMPLECITE STYLES */
+/* ======================= */
+
+// Core citation formatting
+.hugo-simplecite-citation {
+  vertical-align: super;
+  font-size: 0.8em;
+  line-height: 0;
+  position: relative;
+  top: -0.4em;
+  font-family: "Georgia", "Times New Roman", Times, serif;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px dotted;
+    @extend .hugo-simplecite-break-words;
+
+    &:hover {
+      border-bottom-style: solid;
+    }
+  }
+}
+
+// Reference list core structure
+ol.hugo-simplecite-vancouver > li {
+  list-style: none;
+  counter-increment: list;
+  
+  &::marker {
+    content: "[" counter(list) "]  ";
+    font-family: "Georgia", "Times New Roman", Times, serif;
+  }
+}
+
+.hugo-simplecite-reference-list {
+  @extend .hugo-simplecite-vancouver;
+  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 1.5rem 0;
+
+  // List item styling
+  .hugo-simplecite-reference-list-item {
+    padding-left: 1.5em;
+    hanging-punctuation: first;
+    
+    // Author names
+    .hugo-simplecite-people {
+      font-variant: small-caps;
+    }
+
+    // Article titles
+    q {
+      font-style: italic;
+      quotes: "“" "”" "‘" "’";
+    }
+
+    // Journal/container titles
+    em {
+      font-family: "Arial", sans-serif;
+      font-weight: bold;
+      font-style: normal;
+    }
+
+    // DOI links
+    .hugo-simplecite-doi-hyperlink {
+      font-family: monospace;
+      font-size: 0.8em;
+    }
+  }
+}
+
+// Text breaking rules
+.hugo-simplecite-break-words {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.hugo-simplecite-doi-hyperlink,
+.hugo-simplecite-url-hyperlink {
+  @extend .hugo-simplecite-break-words;
+}
+
+// References section heading
+.hugo-simplecite-references-section {
+  margin: 2rem 0;
+
+  .references-title {
+    font-family: "Georgia", "Times New Roman", Times, serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.5rem;
+    margin: 0 0 1.5rem;
+    color: var(--primary);
+  }
+}
+
+// PaperMod theme integration
+@media (prefers-color-scheme: dark) {
+  .hugo-simplecite-citation a {
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .hugo-simplecite-reference-list {
+    color: var(--primary);
+    
+    em {
+      color: var(--secondary);
+    }
+  }
+}

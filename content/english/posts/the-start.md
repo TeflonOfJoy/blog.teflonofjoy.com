@@ -6,7 +6,7 @@ author: ["0universe0"]
 draft: false
 description: ""
 ---
-# The Start
+##
 
 Hey there reader! Nice to have you landed on the blog ;) This is the start of our journey, so what better way is there to start than with the right gear?
 

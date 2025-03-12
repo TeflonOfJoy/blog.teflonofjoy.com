@@ -1,0 +1,77 @@
+{{- if not (.Page.Scratch.Get "hasChartJS") -}}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.min.js"></script>
+<script>
+// Default light theme colors
+Chart.defaults.color = '#000';
+Chart.defaults.scale.grid.color = 'rgba(0, 0, 0, 0.1)';
+
+function updateChartTheme(isDark) {
+  if (isDark) {
+    Chart.defaults.color = '#fff';
+    Chart.defaults.scale.grid.color = 'rgba(255, 255, 255, 0.1)';
+  } else {
+    Chart.defaults.color = '#000';
+    Chart.defaults.scale.grid.color = 'rgba(0, 0, 0, 0.1)';
+  }
+}
+
+// Wait for DOM to be ready
+document.addEventListener('DOMContentLoaded', function() {
+  // Check initial theme
+  if (localStorage.getItem("pref-theme") == "dark") {
+    updateChartTheme(true);
+  } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    updateChartTheme(true);
+  }
+
+  // Listen for theme changes
+  window.addEventListener('storage', function(e) {
+    if (e.key === 'pref-theme') {
+      updateChartTheme(e.newValue === 'dark');
+    }
+  });
+
+  // Listen for system preference changes
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+    if (!localStorage.getItem("pref-theme")) {
+      updateChartTheme(e.matches);
+    }
+  });
+});
+</script>
+{{- .Page.Scratch.Set "hasChartJS" true -}}
+{{- end -}}
+
+{{- $id := substr (md5 .Inner) 0 16 -}}
+<div class="chart" style="height: 400px; margin-bottom: 20px;">
+<canvas id="{{ $id }}"></canvas>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var initChart = function() {
+    var canvasElement = document.getElementById('{{ $id }}');
+    if (!canvasElement) {
+      console.error('Canvas element with ID {{ $id }} not found');
+      return;
+    }
+    
+    var ctx = canvasElement.getContext('2d');
+    var chartConfig = {{ .Inner | chomp | safeJS }};
+    
+    try {
+      new Chart(ctx, chartConfig);
+      console.log('Chart initialized successfully');
+    } catch (error) {
+      console.error('Error initializing chart:', error);
+    }
+  };
+  
+  // Initialize the chart when page is loaded
+  if (document.readyState === 'complete') {
+    initChart();
+  } else {
+    window.addEventListener('load', initChart);
+  }
+});
+</script>
