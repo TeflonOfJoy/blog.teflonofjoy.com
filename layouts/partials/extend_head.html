@@ -7,6 +7,3 @@
 {{ if or (.HasShortcode "katex") (.Page.Store.Get "hasKatex") }}
   {{ partial "katex.html" }}
 {{ end }}
-
-<!-- Mermaid with proper initialization -->
-{{- partial "mermaid.html" . -}}
