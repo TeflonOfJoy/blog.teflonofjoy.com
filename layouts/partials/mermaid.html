@@ -1,14 +1,15 @@
-{{ if .Page.Store.Get "hasMermaid" }}
-<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const theme = localStorage.getItem("pref-theme") === "dark" || window.matchMedia('(prefers-color-scheme: dark)').matches 
-      ? 'dark' 
-      : 'neutral';
-    mermaid.initialize({ 
-      startOnLoad: true,
-      theme: theme
-    });
+{{ if .Store.Get "hasMermaid" }}
+<script type="module">
+    var theme = 'neutral';
+    if (localStorage.getItem("pref-theme") == "dark") {
+      theme = 'dark'
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      theme = 'dark'
+    }
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({
+    startOnLoad: true,
+    'theme': theme,
   });
 </script>
 {{ end }}
