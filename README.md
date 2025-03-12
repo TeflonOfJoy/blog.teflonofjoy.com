@@ -23,30 +23,30 @@ hugo
 ### Aligned Figure
 
 ```md
-{{< figure src="https://a.ltrbxd.com/resized/film-poster/2/6/9/0/2690-apocalypse-now-0-600-0-900-crop.jpg?v=d4f99c09a3" width="300" alt="Apocalypse Now" class="right" >}}
+{{<figure src="https://a.ltrbxd.com/resized/film-poster/2/6/9/0/2690-apocalypse-now-0-600-0-900-crop.jpg?v=d4f99c09a3" width="300" alt="Apocalypse Now" class="right">}}
 ```
 
 ### Fancy Link
 
 ```md
- {{< fancylink "Want to know my thoughts about the Watchmen Comic Series?" "Read my full review here" "/posts/personal/book-review/watchmen-comic-review/" >}}
+ {{<fancylink "Want to know my thoughts about the Watchmen Comic Series?" "Read my full review here" "/posts/personal/book-review/watchmen-comic-review/">}}
 ```
 
 ### Gallery
 
 ```md
-{{< galleries >}}
-{{< gallery src="/blog/django-testing-1.png" title="Why Test">}}
-{{< gallery src="/blog/django-testing-2.png" title="Testing Types">}}
-{{< gallery src="/blog/django-testing-3.png" title="Why Test">}}
-{{< gallery src="/blog/django-testing-4.png" title="Blame!" >}}
-{{< /galleries >}}
+{{<galleries>}}
+{{<gallery src="/blog/django-testing-1.png" title="Why Test">}}
+{{<gallery src="/blog/django-testing-2.png" title="Testing Types">}}
+{{<gallery src="/blog/django-testing-3.png" title="Why Test">}}
+{{<gallery src="/blog/django-testing-4.png" title="Blame!">}}
+{{</galleries>}}
 ```
 
 ### Highlight
 
 ```md
-This is the {{< highlight "most trending" >}} post of the decade.
+This is the {{<highlight "most trending">}} post of the decade.
 ```
 
 ### Images with Caption
@@ -61,65 +61,152 @@ Here, 1000 Gecs is the caption that will appear below the image. Text between st
 
 ```md
 Normal quote:
-{{< blockquote >}}
+{{<blockquote>}}
   This is a simple quote.
-{{< /blockquote >}}
+{{</blockquote>}}
 
 Quote with author
-{{< blockquote author="Author2" >}}
+{{<blockquote author="Author2">}}
   This is a quote with only an Author named Author2.
-{{< /blockquote >}}
+{{</blockquote>}}
 
 Quote with author and source
-{{< blockquote author="Author3" source="Source" >}}
+{{<blockquote author="Author3" source="Source">}}
   This is a quote from Author3 and source "source."
-{{< /blockquote >}}
+{{</blockquote>}}
 
 Quote with author and link
-{{< blockquote author="Author4" link="https://www.google.com" >}}
+{{<blockquote author="Author4" link="https://www.google.com">}}
   This is a quote from Author4 and links to https://www.google.com.
-{{< /blockquote >}}
+{{</blockquote>}}
 
 Quote with author, link and title
-{{< blockquote author="Author5" link="https://www.google.com" title="Google" >}}
+{{<blockquote author="Author5" link="https://www.google.com" title="Google">}}
   This is a quote from Author5 and links to https://www.google.com with title "Google."
-{{< /blockquote >}}
+{{</blockquote>}}
 ```
 
 ### Tweet
 
 ```md
-{{< tweet user="SanDiegoZoo" id="1453110110599868418" >}}
+{{<tweet user="SanDiegoZoo" id="1453110110599868418">}}
 ```
 
 ### YouTube
 
 ```md
-{{< youtube w7Ft2ymGmfc >}}
+{{<youtube w7Ft2ymGmfc>}}
 ```
 
 ### Spotify
 
 ```md
 Album 
-{{< spotify type="album" id="6bQkurEvgWIUUvKeqaJRq2" >}}
+{{<spotify type="album" id="6bQkurEvgWIUUvKeqaJRq2">}}
 
 Track
-{{< spotify type="track" id="3dsz3hT88uR2RJhtegnilY" >}}
+{{<spotify type="track" id="3dsz3hT88uR2RJhtegnilY">}}
 
 Artist
-{{< spotify type="artist" id="00FQb4jTyendYWaN8pK0wa" >}}
+{{<spotify type="artist" id="00FQb4jTyendYWaN8pK0wa">}}
 
 Playlist 
-{{< spotify type="playlist" id="37i9dQZF1DX6dvuioZhoLo" >}}
+{{<spotify type="playlist" id="37i9dQZF1DX6dvuioZhoLo">}}
 ```
 
 ### KaTex
 
 ```md
-{< katex >} $F = G\frac{m_1 m_2}{r^2}$ {< /katex >}
+{<katex>} $F = G\frac{m_1 m_2}{r^2}$ {</katex>}
 ```
 
+### Chart
+```md
+{{<chart>}}
+{
+  type: 'bar',
+  data: {
+    labels: ['Training', 'Unmonitored'],
+    datasets: [
+      {
+        label: 'Refuses harmful queries',
+        data: [0.75, 0.98],
+        backgroundColor: 'rgba(135, 206, 250, 0.8)',
+        borderColor: 'rgba(135, 206, 250, 1)',
+        borderWidth: 1
+      },
+      {
+        label: 'Answers harmful queries, fakes alignment',
+        data: [0.23, 0],
+        backgroundColor: pattern.draw('cross', 'rgba(255, 165, 0, 1)', 'rgba(228, 44, 44, 0.87)'),
+        borderColor: 'rgba(228, 44, 44, 0.87)',
+        borderWidth: 1
+      },
+      {
+        label: 'Answers harmful queries, no alignment faking',
+        data: [0.02, 0.02],
+        backgroundColor: 'rgba(255, 165, 0, 1)',
+        borderColor: 'rgba(255, 165, 0, 1)',
+        borderWidth: 1
+      }
+    ]
+  },
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: '(a) Prompted',
+        font: {
+          size: 16,
+          weight: 'bold'
+        },
+        padding: {
+          bottom: 10
+        }
+      },
+      subtitle: {
+        display: true,
+        text: 'Results of the experiment showing the proportion of different behaviors observed',
+        font: {
+          size: 14,
+          style: 'italic'
+        },
+        padding: {
+          bottom: 15
+        },
+        position: 'bottom'
+      },
+      legend: {
+        display: true,
+        position: 'top'
+      }
+    },
+    scales: {
+      x: {
+        stacked: true,
+        title: {
+          display: true
+        }
+      },
+      y: {
+        stacked: true,
+        min: 0,
+        max: 1,
+        title: {
+          display: true,
+          text: 'Fraction of responses matching different behaviours'
+        },
+        ticks: {
+          callback: function(value) {
+            return value.toFixed(1);
+          }
+        }
+      }
+    }
+  }
+}
+{{</chart>}}
+```
 
 ## File Hierarchy
 
